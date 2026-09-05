@@ -44,9 +44,9 @@ describe('contributor corpus format', () => {
   it('compiles every source file reproducibly and provides variety in every category', () => {
     const data = readCorpus();
     const categories = Object.values(data.corpus).flatMap(Object.values);
-    expect(categories).toHaveLength(57);
-    expect(categories.every(entries => entries.length >= 7)).toBe(true);
-    expect(categories.reduce((n, entries) => n + entries.length, 0)).toBeGreaterThan(400);
+    expect(categories.length).toBeGreaterThanOrEqual(113);
+    expect(categories.every(entries => entries.length >= 20)).toBe(true);
+    expect(categories.reduce((n, entries) => n + entries.length, 0)).toBeGreaterThanOrEqual(2260);
     expect(render(data)).toBe(readFileSync(new URL('../src/generated/corpus.ts', import.meta.url), 'utf8'));
   });
 });

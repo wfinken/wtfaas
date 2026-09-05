@@ -8,3 +8,16 @@ The replica has not caught up with the conversation. | replication lag | Compare
 The query is retrieving a neighborhood to find one house. | an unbounded query | Check filters, pagination, and returned row counts.
 The disk has run out of places to put the next good idea. | storage exhaustion | Check available storage and growth trends.
 The connection limit has become a queueing policy. | too many connections | Inspect active sessions and pool limits.
+The application sorted the entire table to show one page. | expensive sorting | Inspect query plans and sort memory use.
+The query applies a function where the index expected a plain value. | non-indexable predicate | Inspect filter expressions and index usage.
+The connection is open but its transaction was never closed. | leaked transaction | Check transaction lifecycle on error paths.
+The schema contains two interpretations of the same field. | type mismatch | Compare parameter types with column definitions.
+The write succeeded and the read went to a lagging replica. | read routing | Trace where writes and subsequent reads are sent.
+The migration is waiting for a lock held by ordinary traffic. | migration locking | Inspect blocking sessions during schema changes.
+The cleanup job has become the largest workload. | heavy maintenance query | Compare maintenance activity with query latency.
+The database is waiting on storage instead of computation. | storage latency | Measure disk latency and I/O queue depth.
+The planner is using statistics from a quieter time. | stale statistics | Check table statistics freshness and query estimates.
+The app asks for every column and uses two. | excessive projection | Inspect selected columns and transferred row sizes.
+The pagination gets slower with every page number. | offset pagination | Compare large-offset query plans with keyset pagination.
+The retry loop has made a lock dispute louder. | retry contention | Inspect retry rates and transaction backoff.
+The new column exists in the plan but not in this database. | unapplied migration | Compare schema version with the deployed application.

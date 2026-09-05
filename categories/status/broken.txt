@@ -8,4 +8,16 @@ An active incident is blocking normal operation.
 Availability is interrupted while we work on recovery.
 The service needs repair before normal use can resume.
 Current state: unavailable, with attention attached.
-
+The service is failing to perform its core function.
+Normal operation is interrupted by an active failure.
+The system is not working as expected.
+Current requests cannot be handled normally.
+Recovery work is focused on restoring basic operation.
+The failure is active and under investigation.
+The service remains unavailable during repair.
+The system has left the happy path completely.
+An unresolved fault is preventing normal service.
+The current state requires intervention.
+The service is broken enough to have an incident channel.
+Core operation is interrupted.
+The machinery needs repair before ordinary work resumes.

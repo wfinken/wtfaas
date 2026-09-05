@@ -1,0 +1,24 @@
+manager
+description: ETA wording for manager.
+
+{estimate}, with the current scope written down.
+{estimate}, assuming priorities remain in their present order.
+{estimate}, before the next stakeholder discovers a requirement.
+{estimate}, with enough margin for the approval chain.
+{estimate}, provided the plan still matches the available capacity.
+{estimate}, if the dependency owners agree.
+{estimate}, subject to the next planning revision.
+{estimate}, assuming the status report reflects the actual work.
+{estimate}, with the risks still attached to the estimate.
+{estimate}, if the deadline has not been confused with a forecast.
+{estimate}, allowing for the decision that has not been made.
+{estimate}, provided the handoffs happen on time.
+{estimate}, assuming no one adds a small strategic adjustment.
+{estimate}, with review and delivery treated as real work.
+{estimate}, if the remaining tasks have owners.
+{estimate}, subject to what the next checkpoint reveals.
+{estimate}, with confidence proportional to the evidence.
+{estimate}, assuming the calendar is a plan and not an argument.
+{estimate}, if all teams mean the same thing by complete.
+{estimate}, with a reminder that estimates are revisable.
+

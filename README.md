@@ -29,9 +29,11 @@ npm run check
 
 `npm run corpus` validates `categories/*/*.txt` and compiles them to `src/generated/corpus.ts`; never edit the generated file directly. Each utility has a directory and each category has a text file following SignaaS's header and one-response-per-line format. See the [corpus contribution guide](categories/README.md) for examples and structured blame fields.
 
+The corpus includes 2,260 entries across 113 pools, with 20 replies per supported option, including each WTF status/error/acronym, ETA category, decision outcome, and placeholder category. Technical definitions and duration arithmetic stay consistent while the wording varies. Unseeded requests can repeat by chance; use different seeds for reproducible variation. This corpus update changes the mapping of existing seeds to replies.
+
 ## Deployment
 
-Set the production domain in Cloudflare, then run `npm run deploy`. `wrangler.jsonc` supplies the public origin and a default rate limit. Add optional `RATE_LIMIT_KV` and `DB` bindings in your deployment configuration: KV enables anonymous per-hour rate limiting; D1 enables non-blocking aggregate counters using `migrations/0001_counters.sql`. Neither binding is required for the API to work.
+Set the production domain in Cloudflare, then run `npm run deploy`. `wrangler.jsonc` supplies the public origin and a default rate limit. The `DB` binding targets D1 database `93ca2c7c-8578-449a-84f6-d5a907ce0d64` (configuration name `wtfaas`). D1 enables non-blocking aggregate counters using `migrations/0001_counters.sql`; apply the migration with `npx wrangler d1 migrations apply DB --remote` before using the counter in production. Adding the binding does not itself run the migration. An optional `RATE_LIMIT_KV` binding enables anonymous per-hour rate limiting. Either binding may be omitted when self-hosting.
 
 The API accepts only GET, HEAD, and OPTIONS. It bounds and rejects dangerous input, escapes HTML output, sends restrictive headers, and does not require an external runtime service.
 

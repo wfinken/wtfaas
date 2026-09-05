@@ -8,3 +8,16 @@ The packets are too large for part of the journey. | MTU mismatch | Check path M
 A resolver has retained a memory we would prefer it forgot. | stale DNS cache | Compare resolver answers and TTLs.
 The connection pool is collecting connections without releasing them. | connection exhaustion | Inspect active sockets and connection lifecycle.
 The proxy has developed a shorter attention span. | proxy timeout | Compare proxy timeout settings with request latency.
+The name resolves differently depending on who asks. | split DNS | Compare internal and external resolver responses.
+The address family changed but the route did not. | IPv6 reachability | Test IPv4 and IPv6 paths separately.
+The NAT table has reached its guest limit. | NAT exhaustion | Inspect translation table usage and connection churn.
+The connection is being closed while someone still wants to use it. | idle timeout mismatch | Compare client and intermediary idle timeouts.
+The destination port is correct in exactly one configuration file. | port mismatch | Compare listener ports with client settings.
+The hostname points at yesterday's address. | outdated DNS record | Verify authoritative records against the active service address.
+The network path has a bottleneck with excellent secrecy. | bandwidth saturation | Inspect throughput and interface utilization.
+The VPN routes are competing with the local network. | overlapping subnets | Compare tunnel routes and local address ranges.
+The client trusts a certificate chain it was never given. | missing certificate chain | Inspect the chain presented during the TLS handshake.
+The load balancer has chosen an unreachable target. | target reachability | Test connectivity from the balancer network to each backend.
+The connection is following a redirect into a private address. | incorrect redirect target | Inspect redirect locations and their reachability.
+The endpoint moved but the client pinned its address. | address pinning | Check cached or hardcoded destination addresses.
+The proxy configuration has sent local traffic on a long trip. | proxy bypass rules | Inspect proxy settings and bypass patterns.

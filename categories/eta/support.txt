@@ -1,0 +1,24 @@
+support
+description: ETA wording for support.
+
+{estimate}, if the reproduction is clear.
+{estimate}, assuming the needed details are already attached.
+{estimate}, with time to check the proposed answer.
+{estimate}, provided the issue stays within the current scope.
+{estimate}, if the next response resolves the missing context.
+{estimate}, subject to the current support queue.
+{estimate}, with an allowance for reproducing the problem.
+{estimate}, assuming the account details identify the affected system.
+{estimate}, if the diagnostic output points somewhere useful.
+{estimate}, while the symptom becomes a testable explanation.
+{estimate}, provided no additional team needs to investigate.
+{estimate}, with verification before closing the case.
+{estimate}, if the workaround fits the actual use case.
+{estimate}, assuming the reported version is the running version.
+{estimate}, with room for one follow-up question.
+{estimate}, if the relevant logs are available.
+{estimate}, subject to the complexity found during investigation.
+{estimate}, provided the fix can be confirmed.
+{estimate}, while we check the answer against the evidence.
+{estimate}, assuming resolved means the problem no longer occurs.
+

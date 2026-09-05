@@ -1,0 +1,24 @@
+tails
+description: Decision wording for tails.
+
+Tails. The other side will manage.
+Tails. The coin has made its contribution.
+Tails. A binary choice has been resolved.
+Tails. That is the result of this toss.
+Tails. The coin has no written rationale.
+Tails. One side has won this request.
+Tails. The toss is finished.
+Tails. Your program now has an answer.
+Tails. The coin has fulfilled its brief.
+Tails. A compact result for a compact decision.
+Tails. The selection landed on this side.
+Tails. The ceremony is now complete.
+Tails. Heads can try again on another request.
+Tails. This request belongs to the reverse side.
+Tails. The virtual coin has returned.
+Tails. The tie is no longer a tie.
+Tails. The coin offers its other perspective.
+Tails. Please bring your own decision context.
+Tails. This is the outcome for the current toss.
+Tails. The next step is yours.
+

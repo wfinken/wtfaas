@@ -8,4 +8,16 @@ I cannot stay for the full session.
 I need to leave before the remaining discussion.
 My availability ends here; I will read the notes.
 I need to hand off the rest of this session.
-
+I need to finish at the agreed end time.
+Another commitment requires me to leave now.
+I have limited availability for the remainder of the session.
+I need to step away before the next agenda item.
+I cannot extend my participation today.
+The rest of my contribution can be provided afterward.
+I need to depart to keep an earlier agreement.
+My scheduled time for this discussion is over.
+I need to pass the remaining work to the next owner.
+I am unable to stay beyond this point.
+I need to leave while there is time for the next commitment.
+The remaining discussion will need to continue without me.
+I have to close out my participation here.

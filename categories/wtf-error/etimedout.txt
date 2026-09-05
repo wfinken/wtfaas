@@ -1,0 +1,24 @@
+ETIMEDOUT
+description: Human explanations for ETIMEDOUT.
+
+Waiting exceeded the budget.
+The operation did not finish before its deadline.
+The timer ended before the operation did.
+The system waited as long as it was configured to wait.
+The expected result did not arrive within the allowed time.
+The operation's waiting allowance has expired.
+The deadline passed without a completed operation.
+The task took longer than its caller allowed.
+The operation has exceeded its timeout.
+The caller stopped waiting for this attempt.
+The configured time limit was reached.
+The result was not available before patience became policy.
+The wait finished first.
+The operation missed its allotted completion window.
+The timer has closed this attempt.
+The caller needs either a faster response or a reviewed timeout.
+The operation outlasted the permitted wait.
+The expected completion did not beat the clock.
+The timeout is a deadline report, not a root-cause diagnosis.
+The operation has used all the waiting time it was given.
+

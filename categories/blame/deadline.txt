@@ -8,3 +8,16 @@ The requirements are still arriving after work has started. | requirement churn 
 The schedule assumes everyone is available at once. | capacity assumptions | Check actual availability against planned work.
 The work is almost done in several incompatible places. | integration delay | Plan time for integration and end-to-end validation.
 The calendar omitted the time required to fix failed tests. | missing contingency | Re-estimate using unresolved defects and validation work.
+The task list omitted the work between tasks. | transition overhead | Include setup and handoff time in the schedule.
+The estimate assumes the dependency will finish on its first attempt. | optimistic dependency timing | Review dependency confidence and fallback options.
+The project has several priorities all labeled first. | competing priorities | Agree on one explicit priority order.
+The team started implementation before agreeing what done means. | undefined completion | Write acceptance criteria and compare remaining work.
+The review queue is longer than the implementation queue. | review bottleneck | Inspect review wait times and reviewer availability.
+The plan treats uninterrupted focus as a default resource. | context switching | Compare actual focus time with planned task time.
+The delivery date stayed fixed while the scope kept growing. | uncontrolled scope | Separate committed scope from later additions.
+The test environment arrives after the code is due. | environment availability | Schedule environment readiness before validation.
+The project has work waiting on an absent approver. | approval delay | Confirm approval ownership and backup availability.
+The schedule forgot the release process. | release overhead | Include packaging and rollout steps in the delivery plan.
+The task is small only if the undocumented assumptions are true. | hidden complexity | Validate assumptions before refining the estimate.
+The dependency chain has become the project schedule. | critical path | Identify sequential dependencies and earliest completion dates.
+The estimate was never updated after the first plan stopped working. | stale estimate | Re-estimate using completed work and remaining uncertainty.

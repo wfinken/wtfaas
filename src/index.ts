@@ -6,33 +6,18 @@ export interface Env { RATE_LIMIT?: string; PUBLIC_ORIGIN?: string; API_KEYS?: s
 type Format = 'json' | 'text' | 'html';
 const modules = ['wtf', 'excuse', 'decide', 'status', 'ack', 'blame', 'eta', 'reason', 'placeholder'] as const;
 const catalog = corpus as unknown as Record<string, Record<string, unknown[]>>;
-const HTTP: Record<string, {name:string; meaning:string; wtf:string; causes:string[]; try:string[]}> = {
-  '400': {name:'Bad Request',meaning:'The server could not understand the request because it was malformed.',wtf:'The server received your request and found it structurally concerning.',causes:['invalid syntax','missing required parameter'],try:['check request syntax','validate input']},
-  '401': {name:'Unauthorized',meaning:'Authentication is required or failed.',wtf:'The server would like to know who you are first.',causes:['missing credentials','expired token'],try:['authenticate','refresh credentials']},
-  '403': {name:'Forbidden',meaning:'The server understood the request but refuses to authorize it.',wtf:'You are known to the server, but not invited to this particular room.',causes:['missing permission','policy restriction'],try:['check permissions','contact an administrator']},
-  '404': {name:'Not Found',meaning:'The server could not find the requested resource.',wtf:'The requested thing is not here, or is very good at hiding.',causes:['wrong URL','deleted resource'],try:['check the URL','verify the resource exists']},
-  '408': {name:'Request Timeout',meaning:'The server did not receive a complete request in time.',wtf:'The conversation paused for too long.',causes:['slow connection','client stalled'],try:['retry the request','check network connectivity']},
-  '409': {name:'Conflict',meaning:'The request conflicts with the current state of the resource.',wtf:'Two valid ideas attempted to occupy the same reality.',causes:['concurrent update','duplicate resource'],try:['refresh state','resolve the conflict']},
-  '418': {name:"I'm a Teapot",meaning:'The server refuses to brew coffee because it is a teapot.',wtf:'The protocol is joking, but the response is technically legitimate.',causes:['intentional test response'],try:['use a coffee maker','check application logic']},
-  '429': {name:'Too Many Requests',meaning:'The client sent too many requests in a period of time.',wtf:'You are asking faster than this service can politely answer.',causes:['rate limit exceeded','retry loop'],try:['back off','respect Retry-After']},
-  '500': {name:'Internal Server Error',meaning:'The server encountered an unexpected condition.',wtf:'Something inside the server has become unexpectedly philosophical.',causes:['unhandled exception','bad configuration'],try:['inspect server logs','retry if safe']},
-  '502': {name:'Bad Gateway',meaning:'The server acting as a gateway received an invalid response from an upstream server.',wtf:'The server asked another server for help. That server answered incorrectly.',causes:['upstream service unavailable','proxy or load balancer issue','network failure'],try:['retry the request','check upstream health','inspect proxy logs']},
-  '503': {name:'Service Unavailable',meaning:'The server is temporarily unable to handle the request.',wtf:'The service is present but not presently in a service-oriented mood.',causes:['maintenance','overload'],try:['retry later','check service status']},
-  '504': {name:'Gateway Timeout',meaning:'A gateway did not receive a timely response from an upstream server.',wtf:'The server waited for help until waiting became the problem.',causes:['slow upstream','network timeout'],try:['retry the request','inspect upstream latency']}
-};
-const TERMS: Record<string, Record<string,string>> = {
-  CORS:{expansion:'Cross-Origin Resource Sharing',meaning:'A browser security mechanism controlling whether one origin can access resources from another.',wtf:'The browser is asking whether this website may talk to that website.',common_mistake:'Trying to fix a server-to-server request by changing browser CORS headers.'},
-  DNS:{expansion:'Domain Name System',meaning:'The distributed system that maps domain names to network addresses.',wtf:'The internet phonebook, maintained by a committee of distributed caches.',common_mistake:'Assuming a DNS change is visible everywhere immediately.'},
-  TLS:{expansion:'Transport Layer Security',meaning:'A protocol that encrypts communication between network endpoints.',wtf:'The part that lets your browser whisper safely to a server.',common_mistake:'Treating certificate validation failures as harmless.'},
-  JWT:{expansion:'JSON Web Token',meaning:'A compact signed token format commonly used to convey claims.',wtf:'A small package of claims that needs careful verification.',common_mistake:'Decoding a token and assuming it was verified.'},
-  OAuth:{expansion:'Open Authorization',meaning:'A framework for delegated authorization between services.',wtf:'A controlled way to let one service act with limited permission from another.',common_mistake:'Using OAuth as if it were authentication by itself.'},
-  HTTP:{expansion:'Hypertext Transfer Protocol',meaning:'An application protocol for exchanging web resources.',wtf:'The set of polite rules browsers and servers use to pass notes.',common_mistake:'Assuming HTTP status always describes application success.'}
-};
-const ERRORS: Record<string, Record<string,string>> = { ECONNRESET:{meaning:'A peer abruptly closed a network connection.',wtf:'The other side hung up mid-conversation.'}, ECONNREFUSED:{meaning:'No process accepted a connection at the target address.',wtf:'You reached the building, but nobody was accepting visitors.'}, ETIMEDOUT:{meaning:'An operation did not complete within its configured time.',wtf:'Waiting exceeded the budget.'}, ENOTFOUND:{meaning:'The hostname could not be resolved.',wtf:'The internet phonebook did not have that number.'}, EADDRINUSE:{meaning:'The requested network address is already in use.',wtf:'Another process already claimed that parking space.'}, ENOENT:{meaning:'A requested file or directory does not exist.',wtf:'The filesystem cannot find the thing.'}, OOM:{meaning:'The process ran out of available memory.',wtf:'The program tried to remember more than the machine could hold.'}, CORS:TERMS.CORS, DNS:TERMS.DNS, TLS:TERMS.TLS };
+import { HTTP, TERMS, ERRORS } from './wtf-data';
 
 function bad(code:string, message:string, status=400, suggestions?:string[]) { return { error: { code, message, status, ...(suggestions?.length ? {suggestions} : {}) } }; }
 function clean(value:string | null, max=256) { if (!value) return ''; if (value.length > max || /[\0-\x08\x0b\x0c\x0e-\x1f\u200b-\u200f\u202a-\u202e]/.test(value)) throw new Error('INVALID_INPUT'); return value.trim(); }
-function hash(s:string) { let h=2166136261; for (let i=0;i<s.length;i++) h=Math.imul(h^s.charCodeAt(i),16777619); return h>>>0; }
+function hash(s:string) {
+  let h=2166136261;
+  for (let i=0;i<s.length;i++) h=Math.imul(h^s.charCodeAt(i),16777619);
+  // Mix the low bits too: otherwise binary choices and 20-entry reply pools correlate.
+  h=Math.imul(h^(h>>>16),0x85ebca6b);
+  h=Math.imul(h^(h>>>13),0xc2b2ae35);
+  return (h^(h>>>16))>>>0;
+}
 function pick<T>(items:T[], seed:string, namespace:string):T { const i = seed ? hash(`${seed}:${namespace}`) % items.length : crypto.getRandomValues(new Uint32Array(1))[0] % items.length; return items[i]; }
 function formatFor(request:Request):Format | null { const v=new URL(request.url).searchParams.get('format'); if (v) return v==='json'||v==='text'||v==='html' ? v : null; const accept=request.headers.get('accept') || ''; return accept.includes('text/html')?'html':accept.includes('text/plain')?'text':'json'; }
 function escapeHtml(s:string) { return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!)); }
@@ -49,7 +34,7 @@ function route(request:Request):unknown { const url=new URL(request.url); let pa
   if(top==='modules') return {modules:modules.map(id=>({id,description:descriptions[id],...(metadata[id] ? { category_details: Object.values(metadata[id]) } : {}),categories:id==='wtf'?['http','error','acronym']:id==='decide'?['yes-no','coin','choices']:id==='placeholder'?placeholderCategories:categories(id)}))};
   if(top==='openapi.json') return openapi();
   if(top==='random'){ const m=pick(['ack','status','blame','reason','excuse'],seed,'random'); const c=pick(categories(m),seed,`random:${m}`); return simple(m,c,seed,tone); }
-  if(top==='wtf') return wtf(parts.slice(1));
+  if(top==='wtf') return wtf(parts.slice(1),seed);
   if(top==='decide') return decide(parts.slice(1),url,seed);
   if(top==='eta') return eta(parts.slice(1),url,seed);
   if(top==='placeholder') return placeholder(parts.slice(1),url,seed);
@@ -57,12 +42,63 @@ function route(request:Request):unknown { const url=new URL(request.url); let pa
   return bad('UNKNOWN_MODULE',`Unknown module: ${top}`,404,[...modules]);
 }
 function simple(module:string, category:string, seed:string, tone:string, context=''){ category=Object.values(metadata[module] || {}).find(item=>item.slug===category || item.aliases.includes(category))?.slug || category; const entries=catalog[module]?.[category]; if(!entries) return bad('UNKNOWN_CATEGORY',`Unknown ${module} category: ${category}`,404,categories(module)); const entry=pick(entries,seed,`${module}:${category}:${tone}:${context}`); const extras:Record<string,unknown>={}; if(module==='ack')extras.acknowledged=category!=='rejected'; if(module==='status'){extras.state=({broken:'down',done:'complete'} as Record<string,string>)[category]||category;extras.emoji=({deploying:'🚀',investigating:'🔎',degraded:'⚠️',done:'✓'} as Record<string,string>)[category]||'•';extras.severity=category==='broken'?5:2;} if(module==='excuse'){extras.excuse=typeof entry==='string'?entry:(entry as any).message;extras.plausibility=.78;extras.follow_up_risk=.25;extras.tone=tone||'professional';delete extras.message;} if(module==='reason')extras.tone=tone||'professional'; if(module==='blame')extras.confidence=.74; return generated(module,category,entry,seed,extras); }
-function wtf(parts:string[]){const [kind,raw]=parts;if(!kind)return bad('UNKNOWN_CATEGORY','Choose http, error, acronym, or a topic.',404,['http','error','acronym']); if(kind==='http'){const x=HTTP[raw];return x?{module:'wtf',type:'http',code:Number(raw),name:x.name,meaning:x.meaning,wtf:x.wtf,likely_causes:x.causes,try:x.try}:bad('UNKNOWN_CODE',`Unknown HTTP status: ${raw}`,404,Object.keys(HTTP));} const term=(raw||kind).toUpperCase(), record=kind==='error'?ERRORS[term]:TERMS[term]; return record?{module:'wtf',type:kind==='error'?'error':'acronym',term,...record}:bad('UNKNOWN_TERM',`Unknown technical term: ${term}`,404,[...Object.keys(TERMS),...Object.keys(ERRORS)]);}
-function decide(parts:string[],url:URL,seed:string){let choices:string[];if(parts[0]==='yes-no')choices=['yes','no'];else if(parts[0]==='coin')choices=['heads','tails'];else choices=(url.searchParams.get('choices')||parts.join(',')).split(',').map(x=>x.trim()).filter(Boolean); if(choices.length<2||choices.length>20||choices.some(x=>x.length>128))return bad('INVALID_CHOICES','Provide between 2 and 20 non-empty choices.'); const choice=pick(choices,seed,`decide:${choices.join('|')}`),index=choices.indexOf(choice);return parts[0]==='yes-no'?{module:'decide',answer:choice,confidence:.73,message:choice==='yes'?'Yes. Future you can file the appeal.':'No. The available evidence remains unconvinced.',meta:{seed:seed||null,deterministic:Boolean(seed)}}:{module:'decide',choices,choice,index,decided:true,meta:{seed:seed||null,deterministic:Boolean(seed)}};}
-function eta(parts:string[],url:URL,seed:string){const category=parts[0]||'software', allowed=['software','deploy','contractor','meeting','download','migration','support','manager','honest'];if(!allowed.includes(category))return bad('UNKNOWN_CATEGORY',`Unknown ETA category: ${category}`,404,allowed); const input=url.searchParams.get('estimate')||'2d',m=/^(\d{1,4})(s|m|h|d|w)$/.exec(input);if(!m)return bad('INVALID_DURATION','Use one duration such as 30s, 15m, 2h, 1d, or 2w.');const amount=Number(m[1]),unit=m[2],seconds=amount*({s:1,m:60,h:3600,d:86400,w:604800} as Record<string,number>)[unit],label=`${amount} ${({s:'second',m:'minute',h:'hour',d:'day',w:'week'} as Record<string,string>)[unit]}${amount===1?'':'s'}`;const factor=category==='honest'?1:pick([1,1.5,2],seed,`eta:${category}`);return {module:'eta',category,input,normalized_seconds:seconds,stated_eta:label,interpreted_eta:factor===1?label:`${label}–${Math.ceil(amount*factor)} ${({s:'seconds',m:'minutes',h:'hours',d:'days',w:'weeks'} as Record<string,string>)[unit]}`,message:`${label[0].toUpperCase()+label.slice(1)}, assuming nothing unexpectedly becomes interesting.`,meta:{seed:seed||null,deterministic:Boolean(seed),note:'interpreted_eta is a humorous heuristic, not a prediction.'}};}
+function reply(collection:string, category:string, seed:string, namespace:string):string {
+  const entries = catalog[collection]?.[category];
+  if (!entries?.length || !entries.every(entry => typeof entry === 'string')) throw new Error('Missing reply corpus');
+  return pick(entries as string[], seed, namespace);
+}
+function wtf(parts:string[], seed:string) {
+  const [kind, raw] = parts;
+  if (!kind) return bad('UNKNOWN_CATEGORY','Choose http, error, acronym, or a topic.',404,['http','error','acronym']);
+  const meta = { seed: seed || null, deterministic: Boolean(seed) };
+  if (kind === 'http') {
+    const record = HTTP[raw];
+    if (!record) return bad('UNKNOWN_CODE',`Unknown HTTP status: ${raw}`,404,Object.keys(HTTP));
+    return { module:'wtf', type:'http', code:Number(raw), name:record.name, meaning:record.meaning,
+      wtf:reply('wtf-http',raw,seed,`wtf:http:${raw}`), likely_causes:record.causes, try:record.try, meta };
+  }
+  const term = (raw || kind).toUpperCase();
+  const dictionary = kind === 'error' ? ERRORS : TERMS;
+  const key = Object.keys(dictionary).find(key => key.toUpperCase() === term);
+  if (!key) return bad('UNKNOWN_TERM',`Unknown technical term: ${term}`,404,[...Object.keys(TERMS),...Object.keys(ERRORS)]);
+  const category = key.toLowerCase();
+  const collection = kind === 'error' && catalog['wtf-error'][category] ? 'wtf-error' : 'wtf-acronym';
+  return { module:'wtf', type:kind === 'error' ? 'error' : 'acronym', term, ...dictionary[key],
+    wtf:reply(collection,category,seed,`${collection}:${category}`), meta };
+}
+function decide(parts:string[],url:URL,seed:string) {
+  let choices:string[];
+  if(parts[0]==='yes-no') choices=['yes','no'];
+  else if(parts[0]==='coin') choices=['heads','tails'];
+  else choices=(url.searchParams.get('choices')||parts.join(',')).split(',').map(x=>x.trim()).filter(Boolean);
+  if(choices.length<2||choices.length>20||choices.some(x=>x.length>128)) return bad('INVALID_CHOICES','Provide between 2 and 20 non-empty choices.');
+  const namespace = `decide:${JSON.stringify(choices)}`;
+  const choice=pick(choices,seed,namespace),index=choices.indexOf(choice);
+  const category=parts[0]==='yes-no'||parts[0]==='coin'?choice:'choices';
+  const message=reply('decide',category,seed,namespace+':wording').replaceAll('{choice}',()=>choice);
+  const meta={seed:seed||null,deterministic:Boolean(seed)};
+  return parts[0]==='yes-no'
+    ? {module:'decide',answer:choice,confidence:.73,message,meta}
+    : {module:'decide',choices,choice,index,decided:true,message,meta};
+}
+function eta(parts:string[],url:URL,seed:string){const category=parts[0]||'software', allowed=['software','deploy','contractor','meeting','download','migration','support','manager','honest'];if(!allowed.includes(category))return bad('UNKNOWN_CATEGORY',`Unknown ETA category: ${category}`,404,allowed); const input=url.searchParams.get('estimate')||'2d',m=/^(\d{1,4})(s|m|h|d|w)$/.exec(input);if(!m)return bad('INVALID_DURATION','Use one duration such as 30s, 15m, 2h, 1d, or 2w.');const amount=Number(m[1]),unit=m[2],seconds=amount*({s:1,m:60,h:3600,d:86400,w:604800} as Record<string,number>)[unit],label=`${amount} ${({s:'second',m:'minute',h:'hour',d:'day',w:'week'} as Record<string,string>)[unit]}${amount===1?'':'s'}`;const factor=category==='honest'?1:pick([1,1.5,2],seed,`eta:${category}:${input}`);return {module:'eta',category,input,normalized_seconds:seconds,stated_eta:label,interpreted_eta:factor===1?label:`${label}–${Math.ceil(amount*factor)} ${({s:'seconds',m:'minutes',h:'hours',d:'days',w:'weeks'} as Record<string,string>)[unit]}`,message:reply('eta',category,seed,`eta:${category}:${input}:wording`).replaceAll('{estimate}',label),meta:{seed:seed||null,deterministic:Boolean(seed),note:'interpreted_eta is a humorous heuristic, not a prediction.'}};}
 const placeholderCategories=['startup','saas','ecommerce','github','status-page','blog','news','legal','medical','finance','restaurant','portfolio','dashboard','social','reviews','users','products'];
 function placeholder(parts:string[],url:URL,seed:string){const category=parts[0];if(!category||!placeholderCategories.includes(category))return bad('UNKNOWN_CATEGORY',`Unknown placeholder category: ${category||''}`,404,placeholderCategories);const kind=parts[1]||({saas:'text',ecommerce:'product',github:'issue'} as Record<string,string>)[category]||'card',count=Number(url.searchParams.get('count')||1);if(!Number.isInteger(count)||count<1||count>25)return bad('INVALID_COUNT','count must be an integer from 1 to 25.'); const one=(i:number)=>placeholderOne(category,kind,seed?`${seed}:${i}`:'');const data=count===1?one(0):Array.from({length:count},(_,i)=>one(i));return {module:'placeholder',category,kind,data,meta:{seed:seed||null,deterministic:Boolean(seed)}};}
-function placeholderOne(category:string,kind:string,seed:string){const n=pick(['Northline','Juniper','Signal','Harbor','Cinder'],seed,`${category}:${kind}:name`), product=pick(['Daypack','Desk Lamp','Field Notebook','Travel Mug'],seed,`${category}:${kind}:product`);if(category==='saas')return {eyebrow:'Built for teams that ship',headline:'Turn scattered work into visible progress',description:'Keep projects, decisions, and delivery status in one place without adding another weekly meeting.',cta:'Start building'};if(category==='github'||kind==='issue')return {title:'Intermittent timeout when refreshing project list',body:'Refreshing the project list occasionally returns a timeout after 10 seconds. Retrying succeeds.',labels:['bug','needs-triage']};if(category==='ecommerce'||kind==='product')return {name:`${n} ${product}`,slug:`${n}-${product}`.toLowerCase().replace(/ /g,'-'),price:89,currency:'USD',rating:4.6,review_count:218,description:'A compact everyday essential with durable materials and thoughtful details.'};if(kind==='profile'||category==='users')return {name:`${n} Example`,email:`${n.toLowerCase()}@example.com`,role:'Product designer'};return {title:`${n} ${category.replace(/-/g,' ')} workspace`,description:'A fictional but practical fixture for prototypes, demos, and tests.',cta:'Learn more'};}
+function placeholderOne(category:string,kind:string,seed:string) {
+  const fixtures = corpus.placeholder[category as keyof typeof corpus.placeholder];
+  const fixture = pick([...fixtures],seed,`placeholder:${category}:${kind}`);
+  const name=fixture.title, description=fixture.description;
+  if(category==='saas') return {eyebrow:'A place for the next step',headline:name,description,cta:'Explore the workspace'};
+  if(category==='github'||kind==='issue') return {title:name,body:description,labels:['sample','needs-triage']};
+  if(category==='ecommerce'||category==='products'||kind==='product') return {name,slug:name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''),price:89,currency:'USD',rating:4.6,review_count:218,description};
+  if(kind==='profile'||category==='users') return {name,email:`fixture-${hash(name)}@example.com`,role:'Demo member',bio:description};
+  if(kind==='review'||category==='reviews') return {title:name,body:description,rating:4,synthetic:true};
+  if(kind==='article') return {title:name,summary:description,body:description};
+  if(kind==='commit') return {subject:name,body:description};
+  if(kind==='status') return {title:name,message:description,state:'example'};
+  if(kind==='company') return {name,description,website:'https://example.com'};
+  return {title:name,description,cta:'Learn more'};
+}
 const descriptions:Record<string,string>={wtf:'Explain confusing technical things.',excuse:'Generate a scenario-appropriate excuse.',decide:'Make a lightweight decision.',status:'Generate a compact status update.',ack:'Acknowledge receipt or action.',blame:'Name a plausible systems culprit.',eta:'Interpret a small duration estimate.',reason:'Explain an action responsibly.',placeholder:'Generate useful fictional fixture data.'};
 function openapi(){return {openapi:'3.1.0',info:{title:'WTFaaS',version:'1.0.0',description:'Tiny answers for software and life’s tiny WTF moments.'},servers:[{url:'https://wtfaas.dev'}],paths:Object.fromEntries(['/{module}/{category}','/wtf/http/{code}','/decide','/eta/{category}','/placeholder/{category}/{kind}','/modules','/health'].map(p=>[p,{get:{summary:'WTFaaS endpoint',responses:{'200':{description:'Successful response'},'400':{description:'Invalid input'},'404':{description:'Unknown resource'},'429':{description:'Rate limited'}}}}])),components:{schemas:{Error:{type:'object',properties:{error:{type:'object',properties:{code:{type:'string'},message:{type:'string'},status:{type:'integer'}}}}}}}};}
 function home(){return `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WTFaaS — What The Fuck as a Service</title><meta name="description" content="A tiny developer API for WTF explanations, excuses, decisions, status updates, acknowledgments, blame, ETAs, reasons, and realistic placeholder data."><style>body{margin:0;background:#101114;color:#e9e9e6;font:16px system-ui,sans-serif}main{max-width:900px;margin:auto;padding:8vh 24px}h1{font-size:clamp(3rem,12vw,7rem);margin:0;color:#d7ff55}code,pre,input,select,button{font-family:ui-monospace,SFMono-Regular,monospace}pre{background:#191b20;padding:18px;border-radius:10px;overflow:auto}button,input,select{padding:10px;border-radius:6px;border:1px solid #555;background:#191b20;color:inherit}button{background:#d7ff55;color:#121300;font-weight:bold;cursor:pointer}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.card{border:1px solid #333;padding:14px;border-radius:8px}a{color:#d7ff55}</style><main><h1>WTFaaS</h1><h2>What The Fuck as a Service</h2><p>Tiny answers for errors, excuses, decisions, status updates, blame, ETAs, reasons, acknowledgments, and placeholder data.</p><pre>curl https://wtfaas.dev/wtf/http/502</pre><section><h2>Try it</h2><select id="m"><option>/wtf/http/502</option><option>/blame/outage</option><option>/ack/received</option><option>/placeholder/saas</option></select> <input id="seed" placeholder="optional seed"> <button id="go">Run</button><pre id="out">Pick an endpoint, then run it.</pre></section><h2>Modules</h2><div class="grid">${modules.map(m=>`<div class="card"><strong>${m}</strong><br>${descriptions[m]}<br><code>/${m}</code></div>`).join('')}</div><p><a href="/modules">/modules</a> · <a href="/openapi.json">/openapi.json</a> · <a href="/health">/health</a></p></main><script>document.querySelector('#go').onclick=async()=>{let p=document.querySelector('#m').value,s=document.querySelector('#seed').value;let r=await fetch(p+(s?'?seed='+encodeURIComponent(s):''));document.querySelector('#out').textContent=await r.text()}</script></html>`;}

@@ -1,0 +1,24 @@
+HTTP 403
+description: Human explanations for HTTP 403.
+
+The server understood the request and declined permission.
+The door is there. This request is not allowed through it.
+Knowing the address does not grant access.
+The request reached a permission boundary.
+The server has understood enough to say no.
+This operation is outside the request's allowed scope.
+The resource is refusing this request.
+Permission is the missing ingredient.
+The server is enforcing an access rule.
+This request is not on the permitted side of the fence.
+The endpoint exists, but access is not granted here.
+The request needs authorization the server has not given.
+The access policy has the final word.
+You reached the resource and found a permission check.
+The server is declining access, not asking for better syntax.
+This action needs more permission than the request has.
+The server's answer is a policy decision.
+The requested operation is forbidden in this context.
+The request is understandable and still not permitted.
+The resource has a boundary, and this request found it.
+

@@ -1,0 +1,24 @@
+HTTP 503
+description: Human explanations for HTTP 503.
+
+The service is present but not presently in a service-oriented mood.
+The server cannot handle this request right now.
+The service is temporarily unavailable for useful work.
+The endpoint needs a little recovery time.
+The server is currently unable to take on this request.
+The service has temporarily put availability on hold.
+The server's current capacity or condition prevents an answer.
+The resource may be fine; the service cannot handle it now.
+The endpoint is asking you to come back later.
+The service is temporarily unable to cooperate.
+The server is not ready to process this request at present.
+The machinery is unavailable for the moment.
+The service cannot accept the work in its current condition.
+The server has a temporary availability problem.
+The endpoint is open enough to tell you it cannot help right now.
+The service needs time before it can answer normally.
+The server is currently short on the ability to serve.
+The request has arrived during a service-unavailable interval.
+The service is temporarily out of useful answers.
+The server cannot do this now; check for retry guidance.
+

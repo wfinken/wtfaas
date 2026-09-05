@@ -1,0 +1,24 @@
+DNS
+description: Human explanations for DNS.
+
+The internet phonebook, maintained by a committee of distributed caches.
+DNS turns a name you remember into an address a machine can use.
+The network needs an address; you gave it a domain name.
+DNS finds the address behind the friendly name.
+The internet's naming system helps machines locate other machines.
+A domain name needs a lookup before it can become a destination.
+DNS is the address desk for the domain you asked about.
+The hostname is a label; DNS helps find where it points.
+The network cannot drive to a name without an address lookup.
+DNS lets the server move without making everyone memorize a new number.
+The domain name is convenient; the resolved address does the traveling.
+DNS answers where a domain points, subject to caches and configuration.
+The name-to-address translation happens before much of the interesting failure.
+DNS puts an address behind the domain's public identity.
+The resolver is asking the naming system for directions.
+DNS helps your request find the machine behind the name.
+A hostname becomes useful when the naming system can resolve it.
+DNS is how a readable name gets network directions.
+The domain is the contact name; DNS looks up the contact details.
+DNS is the distributed directory that makes domain names practical.
+

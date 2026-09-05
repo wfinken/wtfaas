@@ -32,10 +32,15 @@ export function parseCategory(text, file, utility) {
     }
     if (/[\x00-\x1f\u200b-\u200f\u202a-\u202e]/.test(line)) fail(i + 1, 'Remove control characters.');
     const fields = line.split('|').map(field => field.trim());
-    if (fields.length !== (utility === 'blame' ? 3 : 1) || fields.some(field => !field)) fail(i + 1, utility === 'blame' ? 'Use message | culprit | diagnostic check.' : 'Write one response per line without pipe fields.');
+    const fieldCount = utility === 'blame' ? 3 : utility === 'placeholder' ? 2 : 1;
+    if (fields.length !== fieldCount || fields.some(field => !field)) fail(i + 1, utility === 'blame' ? 'Use message | culprit | diagnostic check.' : utility === 'placeholder' ? 'Use title | description.' : 'Write one response per line without pipe fields.');
+    for (const [, placeholder] of line.matchAll(/\{([^}]+)\}/g)) {
+      if (!((utility === 'eta' && placeholder === 'estimate') || (utility === 'decide' && placeholder === 'choice'))) fail(i + 1, `Unsupported placeholder {${placeholder}}.`);
+    }
+    if (utility === 'eta' && !line.includes('{estimate}')) fail(i + 1, 'ETA wording must include {estimate}.');
     if (seen.has(fields[0])) fail(i + 1, 'Duplicate response.');
     seen.add(fields[0]);
-    result.templates.push(utility === 'blame' ? { message: fields[0], culprit: fields[1], check: fields[2] } : fields[0]);
+    result.templates.push(utility === 'blame' ? { message: fields[0], culprit: fields[1], check: fields[2] } : utility === 'placeholder' ? { title: fields[0], description: fields[1] } : fields[0]);
   }
   if (!result.description) fail(1, 'Add description: below the display name.');
   if (!result.templates.length) fail(1, 'Add at least one response after the header.');
@@ -44,7 +49,8 @@ export function parseCategory(text, file, utility) {
 }
 export function readCorpus(directory = join(root, 'categories')) {
   const corpus = {}, categoryMetadata = {}, messages = new Map();
-  for (const utility of ['ack', 'blame', 'excuse', 'reason', 'status']) {
+  for (const utility of readdirSync(directory, { withFileTypes: true }).filter(entry => entry.isDirectory()).map(entry => entry.name).sort()) {
+    if (!['ack', 'blame', 'excuse', 'reason', 'status', 'wtf-http', 'wtf-error', 'wtf-acronym', 'eta', 'decide', 'placeholder'].includes(utility)) throw new Error(`Unknown utility directory: ${utility}`);
     corpus[utility] = {}; categoryMetadata[utility] = {};
     const keys = new Map();
     const files = readdirSync(join(directory, utility)).filter(file => file.endsWith('.txt')).sort();
@@ -57,7 +63,7 @@ export function readCorpus(directory = join(root, 'categories')) {
         keys.set(key, location);
       }
       for (const template of category.templates) {
-        const message = typeof template === 'string' ? template : template.message;
+        const message = typeof template === 'string' ? template : template.message ?? template.title;
         if (messages.has(message)) throw new Error(`${location}: Duplicate response also in ${messages.get(message)}.`);
         messages.set(message, location);
       }
@@ -79,6 +85,6 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     mkdirSync(join(root, 'src/generated'), { recursive: true });
     writeFileSync(join(root, 'src/generated/corpus.ts'), render(data));
     const categories = Object.values(data.corpus).flatMap(Object.values);
-    console.log(`corpus: 5 utilities, ${categories.length} categories, ${categories.reduce((n, entries) => n + entries.length, 0)} responses`);
+    console.log(`corpus: ${Object.keys(data.corpus).length} collections, ${categories.length} categories, ${categories.reduce((n, entries) => n + entries.length, 0)} responses`);
   } catch (error) { console.error(`${error.message}\nSee categories/README.md for the format.`); process.exitCode = 1; }
 }

@@ -1,0 +1,24 @@
+reviews
+description: Synthetic reviews fixtures.
+
+Useful for everyday work | Fictional review: the item was easy to understand and fit the task described.
+Simple and well considered | Synthetic feedback: the simple design made ordinary use straightforward.
+A practical addition | Sample review: setup was clear and the everyday details felt considered.
+Easy to get started | Demonstration feedback: the item offered a practical solution without extra complexity.
+A helpful small detail | Placeholder review: the result matched the stated purpose and was comfortable to use.
+Comfortable to use | Fictional review: the item was easy to understand and fit the task described.
+A solid first impression | Synthetic feedback: the simple design made ordinary use straightforward.
+Clear instructions included | Sample review: setup was clear and the everyday details felt considered.
+Good fit for the task | Demonstration feedback: the item offered a practical solution without extra complexity.
+Thoughtful organization | Placeholder review: the result matched the stated purpose and was comfortable to use.
+Works for the routine | Fictional review: the item was easy to understand and fit the task described.
+A tidy little solution | Synthetic feedback: the simple design made ordinary use straightforward.
+Useful without much setup | Sample review: setup was clear and the everyday details felt considered.
+A pleasingly simple design | Demonstration feedback: the item offered a practical solution without extra complexity.
+A sensible daily companion | Placeholder review: the result matched the stated purpose and was comfortable to use.
+The right amount of detail | Fictional review: the item was easy to understand and fit the task described.
+Easy to keep organized | Synthetic feedback: the simple design made ordinary use straightforward.
+A straightforward experience | Sample review: setup was clear and the everyday details felt considered.
+A welcome small improvement | Demonstration feedback: the item offered a practical solution without extra complexity.
+A useful item to keep nearby | Placeholder review: the result matched the stated purpose and was comfortable to use.
+

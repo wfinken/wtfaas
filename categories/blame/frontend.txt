@@ -8,3 +8,16 @@ The interface rendered before its data finished arriving. | asynchronous state |
 The stylesheet brought a rule with too much authority. | CSS specificity | Inspect computed styles and overriding selectors.
 The event listener has been invited more than once. | duplicate listeners | Check listener registration and cleanup.
 The client bundle packed a server-only assumption. | environment mismatch | Inspect browser console errors and build-time variables.
+The component remembers state that belongs to its previous page. | stale component state | Inspect state reset behavior during navigation.
+The request returned after the user had already moved on. | response ordering | Check cancellation and stale-response handling.
+The browser has rejected the script under the page policy. | content security policy | Inspect console policy violations and script directives.
+The asset URL assumes the app lives at the site root. | base path configuration | Check generated URLs when served under the actual path.
+The server rendered one tree and the client expected another. | hydration mismatch | Compare initial server markup with client-rendered state.
+The layout has a fixed width and a mobile audience. | inflexible sizing | Inspect overflow and fixed-width elements at narrow viewports.
+The button looks available but has no event handler attached. | missing event binding | Verify listeners are attached after the element exists.
+The form is navigating before the asynchronous work finishes. | default form submission | Check submit handling and navigation events.
+The storage call failed before the rest of the script could run. | unavailable browser storage | Test with storage blocked and inspect exception handling.
+The browser loaded the script before its dependencies. | script ordering | Check module dependencies and script loading attributes.
+The theme switch changes a setting the stylesheet never reads. | disconnected theme state | Compare theme state with selectors controlling the palette.
+The list is using keys that do not identify its items. | unstable list keys | Inspect keys during insertions and reordering.
+The UI has a useful class name that the markup forgot to include. | missing CSS class | Compare rendered class attributes with stylesheet selectors.

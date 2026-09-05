@@ -1,0 +1,24 @@
+deploy
+description: ETA wording for deploy.
+
+{estimate}, if the health checks like what they see.
+{estimate}, assuming the artifact is the artifact we intended.
+{estimate}, with time for the new instances to introduce themselves.
+{estimate}, provided the rollout stays within its checkpoints.
+{estimate}, if the environment variables all attend.
+{estimate}, while production considers the new version.
+{estimate}, assuming no one needs the rollback button.
+{estimate}, with a margin for readiness probes.
+{estimate}, if the release reaches the correct environment.
+{estimate}, subject to the service actually becoming healthy.
+{estimate}, provided the traffic switch is uneventful.
+{estimate}, with the logs open for commentary.
+{estimate}, if the cache accepts that time has moved forward.
+{estimate}, assuming the startup command means what we think.
+{estimate}, while the deployment plan meets the deployed system.
+{estimate}, with verification included.
+{estimate}, if the schema and application arrive in the right order.
+{estimate}, provided the new version answers ordinary requests.
+{estimate}, assuming the load balancer welcomes the new arrivals.
+{estimate}, unless the release becomes a recovery exercise.
+

@@ -1,0 +1,24 @@
+HTTP 401
+description: Human explanations for HTTP 401.
+
+The server would like to know who you are first.
+The request needs valid credentials to get any further.
+You have reached the authentication checkpoint.
+The server is not satisfied with your introduction.
+Bring valid authentication and try the door again.
+The credentials are missing or not doing their job.
+This request has not established its identity.
+The server needs proof, not a confident username.
+Authentication has entered the conversation.
+The resource requires a better introduction.
+Your request needs to show its credentials.
+The authentication step has not succeeded.
+The server cannot accept the current credentials.
+You reached the right server with the wrong introduction.
+The login paperwork needs attention.
+Check the token before blaming the endpoint.
+The request is waiting for valid authentication.
+The server needs a credential it can actually verify.
+An identity claim alone will not open this door.
+Authentication first. Useful content afterward.
+

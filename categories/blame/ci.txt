@@ -8,3 +8,16 @@ The lockfile and installation command have parted ways. | dependency drift | Ver
 The secret is available to the branch next door. | secret scoping | Check secret availability for this workflow and event.
 The runner has less memory than the laptop. | runner resource limits | Inspect peak memory and runner capacity.
 The test order has become an undocumented dependency. | shared test state | Run the failing test alone and inspect cleanup.
+The build expects a tool the runner never installed. | missing toolchain | Check setup steps and tool versions.
+The test assumes a file path from the author's machine. | absolute path assumption | Inspect fixture paths and working directories.
+The job ran before its artifact was uploaded. | workflow dependency | Verify job dependencies and artifact availability.
+The test uses a port already occupied by another test. | port collision | Inspect parallel tests and listener allocation.
+The runner inherited more environment variables than the test expected. | environment leakage | Run with controlled environment variables.
+The dependency download timed out before the actual build. | registry connectivity | Check install logs and registry reachability.
+The workflow condition skipped the step everyone was waiting for. | conditional execution | Review event filters and step conditions.
+The tests require a service that is still starting. | service readiness | Add or verify readiness checks before test execution.
+The script's exit code is being hidden by the wrapper. | masked failure | Inspect pipeline exit handling and shell options.
+The coverage tool is measuring a different build. | source map mismatch | Compare coverage inputs with generated source maps.
+The artifact name changed while the download step stayed loyal. | artifact naming | Compare upload and download artifact names.
+The job hit a time limit during setup. | workflow timeout | Inspect step durations and job timeout configuration.
+The checkout is shallower than the version script expects. | shallow history | Check history depth required by versioning commands.

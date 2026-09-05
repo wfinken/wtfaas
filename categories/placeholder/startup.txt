@@ -1,0 +1,24 @@
+startup
+description: Synthetic startup fixtures.
+
+Relay Notebook | A fictional workspace for turning early ideas into a testable project.
+Fieldwork Studio | Organize the next experiment and record what it teaches you.
+Quiet Launch | Keep the decisions behind a new project visible to everyone involved.
+Common Thread | A small collection of tools for planning the next useful release.
+Patchwork Labs | Bring notes, tasks, and open questions into one shared project.
+Signal Ledger | A fictional workspace for turning early ideas into a testable project.
+Small Hours | Organize the next experiment and record what it teaches you.
+Open Bench | Keep the decisions behind a new project visible to everyone involved.
+Clear Circuit | A small collection of tools for planning the next useful release.
+North Window | Bring notes, tasks, and open questions into one shared project.
+Paper Trail | A fictional workspace for turning early ideas into a testable project.
+Good Measure | Organize the next experiment and record what it teaches you.
+Side Door | Keep the decisions behind a new project visible to everyone involved.
+Plain Sight | A small collection of tools for planning the next useful release.
+Second Draft | Bring notes, tasks, and open questions into one shared project.
+Useful Things | A fictional workspace for turning early ideas into a testable project.
+Daybreak Works | Organize the next experiment and record what it teaches you.
+Local Orbit | Keep the decisions behind a new project visible to everyone involved.
+Steady Hands | A small collection of tools for planning the next useful release.
+Fresh Page | Bring notes, tasks, and open questions into one shared project.
+

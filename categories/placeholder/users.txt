@@ -1,0 +1,24 @@
+users
+description: Synthetic users fixtures.
+
+Avery Example | A fictional member profile for testing team directories.
+Blair Example | A synthetic account used in interface previews.
+Casey Example | Sample profile content with no connection to a real person.
+Drew Example | A demonstration user record for seeded fixtures.
+Ellis Example | Placeholder member information for development and testing.
+Finley Example | A fictional member profile for testing team directories.
+Gray Example | A synthetic account used in interface previews.
+Harper Example | Sample profile content with no connection to a real person.
+Indigo Example | A demonstration user record for seeded fixtures.
+Jules Example | Placeholder member information for development and testing.
+Kai Example | A fictional member profile for testing team directories.
+Lee Example | A synthetic account used in interface previews.
+Morgan Example | Sample profile content with no connection to a real person.
+Noel Example | A demonstration user record for seeded fixtures.
+Oakley Example | Placeholder member information for development and testing.
+Parker Example | A fictional member profile for testing team directories.
+Quinn Example | A synthetic account used in interface previews.
+Reese Example | Sample profile content with no connection to a real person.
+Sage Example | A demonstration user record for seeded fixtures.
+Taylor Example | Placeholder member information for development and testing.
+

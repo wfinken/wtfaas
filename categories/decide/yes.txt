@@ -1,0 +1,24 @@
+yes
+description: Decision wording for yes.
+
+Yes. Future you can file the appeal.
+Yes. The decision has left the committee.
+Yes. Proceed with the usual amount of judgment.
+Yes. One fewer question on the list.
+Yes. The coin of indecision has landed.
+Yes. You may now consider the next problem.
+Yes. That is today's tiny verdict.
+Yes. The answer is available without another meeting.
+Yes. Take the next sensible step.
+Yes. The deliberation has reached an exit.
+Yes. This answer comes without a predictive warranty.
+Yes. An answer has been selected, not a destiny.
+Yes. There is your permission to stop polling this endpoint.
+Yes. The request for a decision has been fulfilled.
+Yes. Subject to your own better information.
+Yes. The small decision machine has spoken.
+Yes. Please supply your own practical context.
+Yes. That concludes this round of deciding.
+Yes. A useful place to start thinking about the consequences.
+Yes. The reply is short because the choice is small.
+

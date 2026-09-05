@@ -8,4 +8,16 @@ I need another pass to avoid handing over a fragile result.
 The original estimate assumed fewer unknowns.
 The happy path was quick; the edge cases were not.
 I was too optimistic about the review turnaround.
-
+The estimate covered writing it, not making it work everywhere.
+The requirements became clearer after the schedule was already agreed.
+I did not budget enough time for the failed approaches.
+The integration work had more moving parts than expected.
+I spent too long polishing the part that was already working.
+The final review uncovered a problem worth fixing.
+I planned around the best case and got an ordinary case.
+The task needed more research than the title suggested.
+The remaining details turned out to be actual work.
+I underestimated the time between working and ready.
+The initial approach did not survive testing.
+The schedule did not include the rework we now need.
+I should have revised the estimate when the scope became clear.

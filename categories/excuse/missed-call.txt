@@ -8,4 +8,16 @@ I was in another conversation and could not pick up.
 I missed the notification while switching tasks.
 I could not answer at that moment.
 I had notifications paused and forgot to check them.
-
+I noticed the call only after checking the phone again.
+I was away from the device when the call came in.
+I did not hear the alert while working.
+I was not able to switch out of the current task.
+I had the phone out of reach at the time.
+I saw the notification after the useful window.
+I was in the middle of something I could not pause.
+I had focused notifications on the wrong set of alerts.
+I did not realize the phone was still in silent mode.
+I was between locations when you called.
+I checked the missed-call list later than intended.
+I had not restored notifications after the previous session.
+I could not take the call without interrupting another commitment.

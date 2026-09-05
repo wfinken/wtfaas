@@ -1,0 +1,24 @@
+HTTP 408
+description: Human explanations for HTTP 408.
+
+The server ran out of patience waiting for the complete request.
+Your request did not finish arriving in time.
+The conversation paused for too long.
+The server received a slower introduction than its deadline allowed.
+The request was still arriving when the timer stopped.
+The client side of the conversation took too long to finish.
+The server waited for the rest of the request and gave up.
+The request delivery missed its time window.
+Not enough request arrived before the timeout.
+The server cannot keep this unfinished conversation open.
+The request needs to arrive more promptly.
+The server's waiting budget expired before the request completed.
+Part of the request may have arrived; the full request was too late.
+The timeout happened while the server was waiting to receive.
+This request took longer to arrive than the server allows.
+The server stopped waiting for the request to finish.
+The request delivery schedule and the server deadline disagreed.
+The server needed the complete request sooner.
+The request was still in transit when waiting ceased to be useful.
+An unfinished request has exceeded its allotted silence.
+

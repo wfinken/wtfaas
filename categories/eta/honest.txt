@@ -1,0 +1,24 @@
+honest
+description: ETA wording for honest.
+
+{estimate} is the current estimate, not a guaranteed finish time.
+{estimate}, based on what is known right now.
+{estimate}, with uncertainty still attached.
+{estimate} is a planning input, not a prediction.
+{estimate}, subject to the remaining unknowns.
+{estimate}, assuming the stated scope is complete.
+{estimate} is the supplied duration; actual completion may differ.
+{estimate}, to be revised if the evidence changes.
+{estimate}, without pretending to know the future.
+{estimate} is the estimate we have, not proof of the outcome.
+{estimate}, pending confirmation through progress.
+{estimate}, with no guarantee hidden in the punctuation.
+{estimate} describes the plan rather than the eventual result.
+{estimate}, as supplied by the caller.
+{estimate}, with the usual possibility of revision.
+{estimate} is useful for planning and insufficient for certainty.
+{estimate}, until better information is available.
+{estimate}, assuming the work is understood well enough.
+{estimate} should be checked against actual progress.
+{estimate}, stated plainly and without a crystal ball.
+

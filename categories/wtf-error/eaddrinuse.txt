@@ -1,0 +1,24 @@
+EADDRINUSE
+description: Human explanations for EADDRINUSE.
+
+Another process already claimed that parking space.
+The requested local address is already in use.
+The port has an existing occupant.
+The application cannot bind where another listener is already bound.
+The socket wants an address that is not available.
+The requested address and port have been claimed.
+The listener cannot move into an occupied binding.
+Check which process already owns the port.
+The server cannot bind to that address right now.
+The socket's chosen location is already taken.
+The application tried to listen at an occupied address.
+A competing binding is preventing this listener from starting.
+The requested network slot already has an owner.
+The port needs to be freed or the configuration changed.
+The new listener and the existing listener want the same place.
+The server is trying to use an address already assigned to a socket.
+The chosen binding conflicts with one already in use.
+The application needs a different port or the current owner to stop.
+The socket cannot claim this local endpoint twice.
+The listening address is occupied before startup can finish.
+

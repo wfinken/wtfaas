@@ -8,4 +8,16 @@ The service needs routine work that cannot run during normal traffic.
 We are replacing a component before it becomes a failure.
 The maintenance window allows controlled testing and recovery.
 We need to apply configuration changes and verify their effect.
-
+The infrastructure needs a scheduled configuration update.
+A planned restart is required to complete the update.
+We need a controlled window for service verification.
+The system needs preventive work to reduce future interruption.
+A dependency update requires coordinated maintenance.
+We need to perform checks that temporarily affect normal use.
+The service is undergoing planned capacity adjustments.
+The maintenance work requires some components to be unavailable.
+We need to complete a scheduled infrastructure change.
+The system is receiving an update with a defined recovery plan.
+Routine upkeep requires a short interruption to processing.
+The service needs a planned replacement of an aging component.
+We are using this window to verify continued reliability.

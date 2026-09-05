@@ -8,4 +8,16 @@ The prerequisites will not be ready in time.
 The expected benefit no longer justifies the effort.
 We need to stop this before further commitments accumulate.
 The scope has changed enough to require a new plan.
-
+The original objective is no longer a priority.
+We need to withdraw the plan before it consumes more resources.
+The event cannot achieve its purpose under the current conditions.
+The required preparation will not be complete.
+We no longer have the capacity to support this commitment.
+The proposal has been superseded by another decision.
+We need to stop work that no longer meets the current need.
+The necessary approval has not been secured.
+The expected outcome cannot be delivered within the agreed limits.
+The dependencies make the original plan unworkable.
+The work is no longer justified by the expected result.
+The current plan would create obligations we cannot meet.
+The requested activity no longer fits the available schedule.

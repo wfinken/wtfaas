@@ -1,0 +1,24 @@
+dashboard
+description: Synthetic dashboard fixtures.
+
+Project activity | A synthetic dashboard panel summarizing current work for interface testing.
+Delivery overview | Sample operational copy with space for totals, trends, and the next action.
+Open task summary | A fictional activity summary for testing cards and compact data displays.
+Review queue | Demonstration panel content showing a useful overview of project state.
+Recent changes | Placeholder reporting text for a dashboard prototype with no live metrics.
+Workload snapshot | A synthetic dashboard panel summarizing current work for interface testing.
+Upcoming milestones | Sample operational copy with space for totals, trends, and the next action.
+Team handoffs | A fictional activity summary for testing cards and compact data displays.
+Pending decisions | Demonstration panel content showing a useful overview of project state.
+Completed work | Placeholder reporting text for a dashboard prototype with no live metrics.
+Weekly progress | A synthetic dashboard panel summarizing current work for interface testing.
+Dependency overview | Sample operational copy with space for totals, trends, and the next action.
+Issue summary | A fictional activity summary for testing cards and compact data displays.
+Release checklist | Demonstration panel content showing a useful overview of project state.
+Owner assignments | Placeholder reporting text for a dashboard prototype with no live metrics.
+Schedule overview | A synthetic dashboard panel summarizing current work for interface testing.
+Resource summary | Sample operational copy with space for totals, trends, and the next action.
+Quality checks | A fictional activity summary for testing cards and compact data displays.
+Queue activity | Demonstration panel content showing a useful overview of project state.
+Project notes | Placeholder reporting text for a dashboard prototype with no live metrics.
+

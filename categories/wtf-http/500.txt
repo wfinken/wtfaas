@@ -1,0 +1,24 @@
+HTTP 500
+description: Human explanations for HTTP 500.
+
+Something inside the server has become unexpectedly philosophical.
+The server hit an unexpected condition it could not handle.
+The request reached the server, which then encountered itself.
+An internal problem prevented the server from finishing.
+The server has a problem it has not described precisely.
+The useful answer was interrupted by a server-side failure.
+Something failed behind the endpoint.
+The server's internal plan did not survive execution.
+The server encountered a condition outside its recovery plan.
+The request uncovered an unexpected problem in the machinery.
+The server cannot complete this request as intended.
+The failure is inside the service, though the details are elsewhere.
+The server has supplied an error where an answer was expected.
+Something went wrong after the request reached the application.
+The server needs its logs consulted.
+The endpoint encountered an internal surprise.
+The server's attempt to answer did not finish successfully.
+The service has reached an unexpected failure path.
+The request got far enough to expose a server problem.
+The server owes you a better answer and itself an investigation.
+

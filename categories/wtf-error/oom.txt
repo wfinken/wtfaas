@@ -1,0 +1,24 @@
+OOM
+description: Human explanations for OOM.
+
+The program tried to remember more than the machine could hold.
+The process ran out of available memory.
+The memory budget has been exhausted.
+The application needs more memory than it currently has.
+The allocator has no room left for this plan.
+The process reached its available memory limit.
+The workload consumed the memory it was allowed to use.
+The program's appetite has exceeded its memory allowance.
+The application cannot fit the next allocation into available memory.
+The process needs less retained data or a reviewed memory limit.
+The memory ceiling has become an operational detail.
+The workload does not fit within its current memory budget.
+The process has run out of room for its working data.
+Memory demand has outgrown available capacity.
+The application has exhausted its space for remembering things.
+The next allocation needs room the process does not have.
+The process's memory use has reached the end of its allowance.
+The program needs to release memory or use less of it.
+The workload's memory requirement is too large for the current limit.
+The application is asking memory for more than it can provide.
+

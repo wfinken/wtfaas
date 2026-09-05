@@ -8,4 +8,16 @@ An unresolved requirement is affecting the schedule.
 The review needs more time than originally allocated.
 We are addressing a failure found during testing.
 Delivery is delayed while we confirm the acceptance criteria.
-
+The final result needs another verification pass.
+We are waiting for information required to finish safely.
+An integration issue needs to be resolved before delivery.
+The next stage depends on a review that is still open.
+We need to correct a problem found in the current version.
+The acceptance checks have not all completed.
+A prerequisite has moved beyond the original schedule.
+The work needs clarification before the remaining steps.
+The current result does not yet meet the release criteria.
+We need additional time to complete the required review.
+A dependency is taking longer than the plan allowed.
+The schedule is being adjusted to account for unresolved work.
+We cannot finish responsibly until the open questions are answered.

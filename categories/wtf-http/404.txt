@@ -1,0 +1,24 @@
+HTTP 404
+description: Human explanations for HTTP 404.
+
+The requested thing is not here, or is very good at hiding.
+The server checked that address and found no resource.
+You reached the server. The thing you wanted did not.
+That URL points to an absence with excellent uptime.
+The requested page has not reported for duty.
+There is a server here, but no matching thing there.
+The resource could not be found at this address.
+The address looks official. The destination is missing.
+The server has no matching resource to hand you.
+This URL currently leads to a small administrative void.
+The thing you asked for is not where you asked for it.
+Your request arrived at an empty shelf.
+The route ends here, but the resource does not begin.
+The link promised a destination the server cannot find.
+The server has checked its pockets. No resource.
+You found the right building and an unlisted room.
+The requested resource is absent from this location.
+A bookmark has made a promise the server cannot keep.
+The endpoint has nothing matching that particular address.
+The server can answer you, just not with that resource.
+

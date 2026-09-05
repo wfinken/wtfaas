@@ -1,0 +1,24 @@
+github
+description: Synthetic github fixtures.
+
+Clarify the setup instructions | The current behavior needs a clearer explanation. Include an example and verify it against the implementation.
+Add a loading state to the list | Review the affected view with both populated and empty data, then document the expected result.
+Handle an empty search result | Reproduce the behavior in a small test case and add a focused check for the intended outcome.
+Document the response fields | Make the interaction understandable with keyboard navigation and confirm the narrow-screen layout.
+Improve keyboard focus visibility | Update the relevant implementation and include a short note explaining the observable change.
+Preserve filters during navigation | The current behavior needs a clearer explanation. Include an example and verify it against the implementation.
+Show a useful network error | Review the affected view with both populated and empty data, then document the expected result.
+Check the mobile table layout | Reproduce the behavior in a small test case and add a focused check for the intended outcome.
+Add a retry action to the panel | Make the interaction understandable with keyboard navigation and confirm the narrow-screen layout.
+Explain the seed parameter | Update the relevant implementation and include a short note explaining the observable change.
+Update the example command | The current behavior needs a clearer explanation. Include an example and verify it against the implementation.
+Keep selection after refresh | Review the affected view with both populated and empty data, then document the expected result.
+Validate the empty input case | Reproduce the behavior in a small test case and add a focused check for the intended outcome.
+Describe the cache behavior | Make the interaction understandable with keyboard navigation and confirm the narrow-screen layout.
+Make the copy confirmation visible | Update the relevant implementation and include a short note explaining the observable change.
+Include a compact date format | The current behavior needs a clearer explanation. Include an example and verify it against the implementation.
+Add labels to the form controls | Review the affected view with both populated and empty data, then document the expected result.
+Review the default sort order | Reproduce the behavior in a small test case and add a focused check for the intended outcome.
+Keep the footer links readable | Make the interaction understandable with keyboard navigation and confirm the narrow-screen layout.
+Improve the missing-resource message | Update the relevant implementation and include a short note explaining the observable change.
+

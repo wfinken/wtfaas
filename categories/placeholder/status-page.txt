@@ -1,0 +1,24 @@
+status-page
+description: Synthetic status-page fixtures.
+
+Service update | This fictional update describes a service event for interface and notification testing.
+Maintenance notice | Use this synthetic notice to preview a status timeline before connecting live incident data.
+Recovery progress | This sample entry provides placeholder text for a service health dashboard.
+Incident follow-up | A demonstration status update with no connection to an actual incident.
+Planned service work | Placeholder incident copy for checking layout, timestamps, and notification delivery.
+Availability report | This fictional update describes a service event for interface and notification testing.
+Current service status | Use this synthetic notice to preview a status timeline before connecting live incident data.
+Operational review | This sample entry provides placeholder text for a service health dashboard.
+Infrastructure update | A demonstration status update with no connection to an actual incident.
+Resolution summary | Placeholder incident copy for checking layout, timestamps, and notification delivery.
+Monitoring note | This fictional update describes a service event for interface and notification testing.
+Component status | Use this synthetic notice to preview a status timeline before connecting live incident data.
+Traffic update | This sample entry provides placeholder text for a service health dashboard.
+Service advisory | A demonstration status update with no connection to an actual incident.
+Maintenance completion | Placeholder incident copy for checking layout, timestamps, and notification delivery.
+Investigation update | This fictional update describes a service event for interface and notification testing.
+Performance notice | Use this synthetic notice to preview a status timeline before connecting live incident data.
+Recovery checkpoint | This sample entry provides placeholder text for a service health dashboard.
+Dependency status | A demonstration status update with no connection to an actual incident.
+Scheduled update | Placeholder incident copy for checking layout, timestamps, and notification delivery.
+

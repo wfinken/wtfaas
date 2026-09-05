@@ -8,4 +8,16 @@ A later time will allow us to bring the necessary information.
 The original timing no longer fits the project sequence.
 We need to find a slot with the decision-makers available.
 Moving this will avoid a conflict with committed work.
-
+The session needs to follow the completion of prerequisite work.
+We need a time when the necessary information is available.
+The original slot does not allow enough preparation.
+The discussion will be more useful after the review.
+We need to align the session with the updated delivery schedule.
+The current slot overlaps with an existing obligation.
+The meeting needs the people responsible for the decision.
+We should move this until the agenda can be resolved.
+The next available slot gives us time to prepare properly.
+A dependency has changed the useful timing of this discussion.
+We need to avoid asking for a decision before the evidence is ready.
+The plan now requires this to happen later in the sequence.
+The proposed time no longer supports the intended outcome.

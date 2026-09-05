@@ -1,0 +1,24 @@
+choices
+description: Decision wording for choices.
+
+Selected: {choice}. One option has escaped the list.
+The answer is {choice}. You can retire the shortlist.
+Go with {choice}, subject to your own judgment.
+This request selects {choice}.
+The decision is {choice}. The meeting is optional.
+Choose {choice}. The alternatives have been considered by a small algorithm.
+The selected option is {choice}.
+{choice} gets this round.
+The list has yielded {choice}.
+Your next candidate is {choice}.
+The result points to {choice}.
+The tie-breaker selects {choice}.
+The choice for this request is {choice}.
+{choice} is the returned option.
+The decision machine offers {choice}.
+For this selection, use {choice}.
+The selected item is {choice}; context remains your department.
+The shortlist ends at {choice}.
+This round of deliberation returns {choice}.
+The API has picked {choice}.
+

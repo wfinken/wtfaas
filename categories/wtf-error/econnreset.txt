@@ -1,0 +1,24 @@
+ECONNRESET
+description: Human explanations for ECONNRESET.
+
+The other side hung up mid-conversation.
+An established connection was abruptly reset.
+The connection ended more abruptly than the application expected.
+The peer stopped the conversation without a tidy finish.
+Your socket encountered an unexpected reset.
+The network conversation lost its connection suddenly.
+The other endpoint or an intermediary reset the connection.
+The connection was cut off while it was still relevant.
+The socket did not get a graceful goodbye.
+The transport connection ended with a reset.
+The conversation was interrupted at the connection level.
+The peer's side of the connection stopped cooperating abruptly.
+An active connection was reset before work could finish.
+The request lost the connection it was using.
+The connection received a reset instead of a normal completion.
+The socket's conversation was terminated unexpectedly.
+The connection ended with a network-level interruption.
+Something reset the connection before the application was finished.
+The remote conversation stopped with an abrupt disconnect.
+The socket was told the connection was no longer continuing.
+

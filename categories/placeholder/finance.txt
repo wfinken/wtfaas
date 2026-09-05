@@ -1,0 +1,24 @@
+finance
+description: Synthetic finance fixtures.
+
+Account overview demo | Synthetic financial-interface content for testing; no real accounts or investment advice are included.
+Monthly summary preview | A fictional dashboard example for checking layout and sample reporting fields.
+Transaction list example | Demonstration copy for a finance prototype, with no connection to actual funds.
+Budget category sample | Placeholder administrative text for visual testing, not a financial recommendation.
+Statement layout preview | Sample reporting content intended for interface previews rather than real financial decisions.
+Payment reminder demo | Synthetic financial-interface content for testing; no real accounts or investment advice are included.
+Savings goal mockup | A fictional dashboard example for checking layout and sample reporting fields.
+Expense review example | Demonstration copy for a finance prototype, with no connection to actual funds.
+Receipt collection sample | Placeholder administrative text for visual testing, not a financial recommendation.
+Account settings preview | Sample reporting content intended for interface previews rather than real financial decisions.
+Transfer screen demo | Synthetic financial-interface content for testing; no real accounts or investment advice are included.
+Spending chart example | A fictional dashboard example for checking layout and sample reporting fields.
+Report filter sample | Demonstration copy for a finance prototype, with no connection to actual funds.
+Balance card mockup | Placeholder administrative text for visual testing, not a financial recommendation.
+Category editor preview | Sample reporting content intended for interface previews rather than real financial decisions.
+Export summary demo | Synthetic financial-interface content for testing; no real accounts or investment advice are included.
+Reconciliation screen sample | A fictional dashboard example for checking layout and sample reporting fields.
+Notification settings example | Demonstration copy for a finance prototype, with no connection to actual funds.
+Period comparison preview | Placeholder administrative text for visual testing, not a financial recommendation.
+Dashboard total mockup | Sample reporting content intended for interface previews rather than real financial decisions.
+

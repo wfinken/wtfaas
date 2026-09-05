@@ -8,4 +8,16 @@ I cannot commit to the requested timeline.
 Taking this on would delay existing obligations.
 I am not the right person for this particular task.
 I need to keep my current workload manageable.
-
+I cannot make a reliable commitment to this work.
+My existing responsibilities need the available time.
+I do not have the necessary availability for this request.
+I cannot support the requested scope at present.
+I need to decline rather than make a commitment I cannot keep.
+This is beyond the capacity I can currently offer.
+The proposed work does not fit my current responsibilities.
+I cannot provide the level of attention this requires.
+I need to reserve the available time for prior commitments.
+The request would require resources I do not have.
+I cannot take responsibility for this outcome right now.
+I am unable to participate within the proposed arrangement.
+I cannot accommodate this without changing existing agreements.

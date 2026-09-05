@@ -1,0 +1,24 @@
+heads
+description: Decision wording for heads.
+
+Heads. The other side can request a rematch.
+Heads. The coin has completed its assignment.
+Heads. A two-sided problem now has one answer.
+Heads. That settles this particular toss.
+Heads. The coin is not taking follow-up questions.
+Heads. One face has been selected.
+Heads. The toss has reached a conclusion.
+Heads. The result is ready for your script.
+Heads. The coin's work here is done.
+Heads. A small decision with a small payload.
+Heads. The selection favors this side.
+Heads. No additional ceremony is required.
+Heads. The other outcome remains available next time.
+Heads. This is the side for this request.
+Heads. The toss has returned its result.
+Heads. Your tie has been broken.
+Heads. The coin has chosen its public face.
+Heads. The result comes without strategic advice.
+Heads. That is the answer from this virtual toss.
+Heads. You may now proceed to the consequences.
+

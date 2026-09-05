@@ -8,3 +8,16 @@ The timezone was obvious until another machine got involved. | timezone assumpti
 The documentation and the running version have different birthdays. | outdated documentation | Check documentation against the installed version.
 The dependency upgraded while the assumptions stayed put. | version incompatibility | Compare dependency versions and compatibility requirements.
 The happy path had no plan for this particular detour. | an unhandled edge case | Reproduce the failing input and inspect boundary handling.
+The path is correct only from a different working directory. | relative path assumption | Check the runtime working directory and path resolution.
+The identifier looks numeric until a leading zero matters. | identifier coercion | Inspect conversions between strings and numbers.
+The clock comparison crosses a timezone boundary. | time conversion | Verify timezone-aware parsing and comparisons.
+The retry assumes the operation is safe to repeat. | retry semantics | Check idempotency before automatic retries.
+The error handler has replaced the useful error with a vague one. | lost error context | Trace the original exception and wrapping behavior.
+The configuration file was edited, but the process never reloaded it. | unreloaded configuration | Verify reload behavior and effective runtime settings.
+The environment differs in a value nobody listed as required. | undocumented configuration | Compare effective environments and required settings.
+The data includes an empty value where code expected a useful one. | missing value handling | Test null and empty inputs at the boundary.
+The index is off by one and remarkably consistent about it. | boundary error | Check first and last elements in the failing operation.
+The command succeeded but wrote its output somewhere unexpected. | output path | Inspect the configured destination and actual generated files.
+The encoding changed between reading and writing. | encoding mismatch | Compare byte encoding at each processing boundary.
+The cleanup ran before the last user of the resource. | lifecycle ordering | Trace resource ownership and disposal timing.
+The tool did exactly what the flag said instead of what was intended. | incorrect option | Compare command arguments with the documented behavior.

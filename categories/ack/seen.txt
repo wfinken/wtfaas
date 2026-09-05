@@ -8,4 +8,16 @@ I have seen the update.
 This has my attention.
 Read. A considered response will follow.
 The message is no longer unread.
-
+The update is visible and has been read.
+Your message has crossed the unread boundary.
+I have looked through the material.
+This has reached human attention.
+The note has been opened and reviewed for context.
+I have read the message; action is still pending.
+The update is on my radar now.
+I can confirm this was seen.
+The information is visible on my side.
+The message has been read without a decision yet.
+I have seen the request and its context.
+Read status confirmed.
+The update is no longer waiting to be noticed.

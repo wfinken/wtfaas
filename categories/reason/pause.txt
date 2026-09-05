@@ -8,4 +8,16 @@ We are waiting for a decision that changes the scope.
 Continuing now would create avoidable rework.
 The next step requires a confirmed owner.
 We need a clear success criterion before proceeding.
-
+We need to reassess the approach against the current requirements.
+The work needs a confirmed decision before further implementation.
+We should establish ownership before adding more tasks.
+The evidence is incomplete for the next action.
+The current assumptions need to be checked.
+We need to resolve the disagreement on the desired outcome.
+The team needs time to review the newly identified risk.
+The next step may change after the pending review.
+We should confirm the dependency before committing more effort.
+The work needs a clearer boundary to avoid expansion.
+We are stopping temporarily to protect the remaining budget.
+The task needs an updated plan before execution resumes.
+We need to verify that this remains the right problem to solve.

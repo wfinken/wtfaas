@@ -8,4 +8,16 @@ The next step is awaiting confirmation.
 Queued behind work that must finish first.
 Waiting. Refreshing harder has not helped.
 No action is available until the handoff arrives.
-
+The task is awaiting its turn.
+The next step is ready once the input arrives.
+Processing is paused at a scheduled handoff.
+The work is queued for the next available slot.
+Waiting for confirmation before continuing.
+The task is pending an expected event.
+The next operation has not started yet.
+The work is between completed preparation and available input.
+The queue position has not changed.
+The task is ready for the dependency to finish.
+Waiting for the current operation to return.
+The next stage has not received its starting signal.
+The work is pending, with no new result yet.

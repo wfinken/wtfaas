@@ -1,0 +1,24 @@
+news
+description: Synthetic news fixtures.
+
+Community workshop opens this weekend | This fictional community brief is sample content for testing a news layout.
+Library adds an evening session | A synthetic local update with space for a date, location, and short introduction.
+Local exhibit announces its schedule | Demonstration news copy for previews; it does not report an actual event.
+Public garden welcomes new volunteers | This sample bulletin helps test headlines and summaries across screen sizes.
+Neighborhood group publishes an update | A made-up community item for editorial prototypes and notification examples.
+Weekend market extends its hours | This fictional community brief is sample content for testing a news layout.
+Arts studio hosts an open afternoon | A synthetic local update with space for a date, location, and short introduction.
+Reading club shares its autumn list | Demonstration news copy for previews; it does not report an actual event.
+Repair cafe adds a second table | This sample bulletin helps test headlines and summaries across screen sizes.
+Walking group plans a new route | A made-up community item for editorial prototypes and notification examples.
+Community hall updates its calendar | This fictional community brief is sample content for testing a news layout.
+Independent makers join the fair | A synthetic local update with space for a date, location, and short introduction.
+Museum previews a small collection | Demonstration news copy for previews; it does not report an actual event.
+Public noticeboard moves indoors | This sample bulletin helps test headlines and summaries across screen sizes.
+Volunteer team completes a cleanup | A made-up community item for editorial prototypes and notification examples.
+School club presents its project | This fictional community brief is sample content for testing a news layout.
+Local archive shares a photo display | A synthetic local update with space for a date, location, and short introduction.
+Book exchange adds a collection point | Demonstration news copy for previews; it does not report an actual event.
+Music group schedules a rehearsal | This sample bulletin helps test headlines and summaries across screen sizes.
+Craft circle welcomes beginners | A made-up community item for editorial prototypes and notification examples.
+

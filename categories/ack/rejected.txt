@@ -8,4 +8,16 @@ Please address the open concerns first.
 This does not meet the agreed criteria.
 Declined for the reasons already recorded.
 Return this to the drafting table.
-
+Approval is withheld until the listed issues are resolved.
+The current version cannot proceed.
+This request needs a different approach.
+The review outcome is a request for revision.
+This version is not acceptable for the proposed use.
+The submission falls short of the required checks.
+Please revise and resubmit this item.
+The proposed action is not authorized by this review.
+The current request has been declined.
+I cannot sign off on this version.
+This needs more work before acceptance.
+The approval criteria have not been met.
+The review ends here until the concerns are addressed.

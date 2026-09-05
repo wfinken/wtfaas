@@ -9,4 +9,15 @@ The rollback plan became the deployment plan.
 A dependency behaved differently in the target environment.
 The release needs one more configuration check.
 Production has provided feedback that staging withheld.
-
+The release artifact and the runtime have a compatibility discussion underway.
+The deployment script found a condition outside the happy path.
+The new version needs a dependency that is not ready yet.
+The release reached a check that did not agree with the plan.
+A startup assumption was only true on the development machine.
+The deployment uncovered an undocumented configuration requirement.
+The environment has retained a value we expected to replace.
+The rollout is waiting for the service to become healthy.
+The update needs a coordinated change we had not scheduled.
+The deployment passed packaging and paused at reality.
+A cached asset is not ready to accept the new version.
+The health probe needs to see the service behaving normally first.

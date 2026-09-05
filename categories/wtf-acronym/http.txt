@@ -1,0 +1,24 @@
+HTTP
+description: Human explanations for HTTP.
+
+The set of polite rules browsers and servers use to pass notes.
+HTTP defines the request-and-response conversation for web resources.
+The client asks for something, and the server answers using shared rules.
+HTTP gives web messages methods, headers, and status codes.
+The browser and server need a common format for the exchange.
+HTTP is the protocol that makes a web request recognizable.
+The client sends a method and target; the server sends a response.
+HTTP turns web interactions into structured messages.
+The web conversation needs more structure than shouting a URL.
+HTTP tells both sides how requests and responses are expressed.
+The application exchanges resource messages using HTTP semantics.
+HTTP supplies the vocabulary around the bytes being exchanged.
+The request has a method; the response has a status.
+HTTP gives the network exchange an application-level contract.
+A web request is a message with defined protocol meaning.
+HTTP is the grammar of much of the web's conversation.
+The server interprets the request according to HTTP's rules.
+HTTP makes resource access understandable to clients and intermediaries.
+Headers and status codes help both sides interpret the exchange.
+HTTP describes the conversation; application correctness still needs its own checks.
+

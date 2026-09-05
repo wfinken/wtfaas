@@ -8,4 +8,16 @@ The camera setup needs attention I cannot give it during the call.
 I can participate more reliably with video disabled.
 I am preserving bandwidth for the shared screen.
 My video is unavailable, but I can still follow the discussion.
-
+I am keeping the call audio-only while I sort out the video setup.
+I need to focus on the document rather than the camera.
+My current setup is better suited to audio participation.
+I am reducing the load on the connection during the discussion.
+I have not configured the camera for this session.
+I am following along without transmitting video.
+I need the available screen space for the shared material.
+I am keeping video disabled for this call.
+My camera is not ready, but I can contribute by voice.
+I am using an audio-only arrangement today.
+I need to keep the connection stable while we review the screen.
+I am participating without a camera feed for this session.
+The video setup needs a separate troubleshooting appointment.

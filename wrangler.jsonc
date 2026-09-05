@@ -5,5 +5,13 @@
   "compatibility_date": "2026-09-04",
   "compatibility_flags": ["nodejs_compat"],
   "observability": { "enabled": true, "head_sampling_rate": 1 },
-  "vars": { "RATE_LIMIT": "100", "PUBLIC_ORIGIN": "https://wtfaas.dev" }
+  "vars": { "RATE_LIMIT": "100", "PUBLIC_ORIGIN": "https://wtfaas.dev" },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "wtfaas",
+      "database_id": "93ca2c7c-8578-449a-84f6-d5a907ce0d64",
+      "migrations_dir": "migrations"
+    }
+  ]
 }

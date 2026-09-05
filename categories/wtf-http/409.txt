@@ -1,0 +1,24 @@
+HTTP 409
+description: Human explanations for HTTP 409.
+
+The request conflicts with how things are right now.
+Two valid ideas attempted to occupy the same reality.
+The current resource state does not allow this change.
+Your update and the existing state need to reconcile.
+The server needs the state conflict resolved first.
+The requested change does not fit the current version of events.
+Something already exists or changed in a way this request conflicts with.
+The request brought an outdated understanding to a current-state problem.
+The server found a collision between intent and reality.
+Check the current state before proposing the same change again.
+The operation needs a conflict resolution step.
+The resource cannot accept this change in its present state.
+The update needs to account for what is already there.
+The request and the resource are telling incompatible stories.
+The server is declining a conflicting state change.
+There is a disagreement to resolve before this can proceed.
+The requested operation has encountered existing commitments.
+The resource state is not the one this operation requires.
+The server needs these competing conditions untangled.
+Refresh your understanding of the resource, then resolve the conflict.
+

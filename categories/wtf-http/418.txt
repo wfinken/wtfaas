@@ -1,0 +1,24 @@
+HTTP 418
+description: Human explanations for HTTP 418.
+
+The server is a teapot. Coffee remains outside its remit.
+The request asked a teapot to broaden its professional horizons.
+Coffee production has encountered a tea-shaped dependency.
+The server has chosen tea as its area of expertise.
+You asked for coffee and reached the wrong appliance.
+The teapot has reviewed the request and stayed a teapot.
+The beverage protocol has become unusually literal.
+This server declines coffee on equipment grounds.
+The request requires a coffee maker, and this is not one.
+The teapot is functioning within its documented limitations.
+Tea is supported. Your coffee ambitions need another endpoint.
+The appliance has a narrow but strongly held identity.
+The server's beverage specialization is causing a compatibility issue.
+A teapot cannot be promoted into a coffee maker by HTTP.
+The protocol joke has arrived in a real response.
+The server is expressing a tea-related objection.
+Coffee requires a different backend appliance.
+The request has discovered the limits of beverage interoperability.
+The server has brewing capabilities, but not the ones requested.
+The teapot would like the coffee ticket reassigned.
+

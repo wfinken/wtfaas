@@ -8,4 +8,16 @@ A burst of traffic has used the available request budget.
 The service needs clients to back off before retrying.
 This limit keeps one workload from consuming all capacity.
 Please wait for the current window to reset.
-
+The client has exceeded the permitted request frequency.
+The current traffic pattern is consuming the shared request allowance.
+Please reduce concurrency before sending additional requests.
+The available quota for this interval has been used.
+We need a pause before accepting more traffic from this client.
+The request budget must recover before another attempt.
+The caller is sending requests faster than the policy allows.
+Please honor the retry guidance returned with this response.
+The service is limiting bursts to preserve predictable availability.
+The current request pattern needs backoff between attempts.
+The rate policy applies until the next allowance becomes available.
+The endpoint cannot accept another request at this pace.
+The request frequency needs to fall within the configured limit.

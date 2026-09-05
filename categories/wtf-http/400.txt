@@ -1,0 +1,24 @@
+HTTP 400
+description: Human explanations for HTTP 400.
+
+The request arrived with assembly required.
+The server can read the envelope, but the contents need work.
+Something about that request does not fit the expected shape.
+Your request needs a syntax review before it gets a response.
+The server found a problem before the useful part could start.
+The request form has opinions about how it should be filled out.
+A malformed request has reached a very literal machine.
+The server is asking you to check what you sent.
+The request did not pass the basic understandability test.
+You sent a question the server cannot reliably parse.
+The payload needs a little structural supervision.
+The server would help if the request made sense to it.
+The request is present. A usable version of it is missing.
+Before retrying, inspect the request itself.
+The server encountered a formatting disagreement.
+Your request took a wrong turn before processing began.
+The API contract and the request are not on speaking terms.
+The server needs a better-formed version of that question.
+This request needs correction, not more enthusiasm.
+The server received your request and found it structurally concerning.
+

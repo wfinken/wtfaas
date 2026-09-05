@@ -8,3 +8,16 @@ The load balancer has nobody healthy to talk to. | unhealthy backends | Inspect 
 The incident timeline begins suspiciously close to a release. | the last deploy | Compare incident onset with recent releases.
 The service is waiting on a service that is also waiting. | dependency failure | Inspect upstream health and timeout rates.
 Retries have formed an enthusiastic feedback loop. | a retry storm | Inspect retry volume and backoff behavior.
+The process has reached its memory ceiling. | memory exhaustion | Inspect memory usage and process termination events.
+The database cannot accept another connection. | connection saturation | Check pool usage and database connection limits.
+The storage volume has no room for the next write. | full storage | Check free space and storage growth.
+The service is running with credentials nobody accepts anymore. | invalid credentials | Check authentication failures and recent credential changes.
+The route points toward infrastructure that has moved on. | stale routing | Compare active routes with current backend addresses.
+The queue has more work than its consumers can finish. | queue backlog | Inspect queue age and consumer throughput.
+The application is alive but stuck behind a lock. | lock contention | Inspect blocked operations and lock ownership.
+The network policy has become more exclusive than intended. | network policy | Review recent policy changes and denied traffic.
+The dependency failed over without bringing all its clients. | failover configuration | Check client endpoints and failover discovery.
+The service restarted faster than it could recover. | restart loop | Inspect startup failures and restart frequency.
+The shared limit turned out to be shared by more things. | shared quota | Inspect account-level limits and workload usage.
+The worker pool has no idle workers left. | worker saturation | Compare busy workers with incoming request volume.
+The infrastructure change altered more than its description promised. | configuration regression | Compare effective configuration before and after the incident.

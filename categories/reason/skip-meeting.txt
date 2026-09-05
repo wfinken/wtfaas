@@ -8,4 +8,16 @@ I need to protect time for the work being discussed.
 I can provide feedback in the shared document.
 My attendance would not change the next step.
 The agenda can be resolved asynchronously.
-
+The decision can be made from the written proposal.
+I have no additional input that requires a live session.
+The agenda is better handled through comments on the document.
+A recorded update will cover the necessary context.
+I need the time to complete the deliverable being reviewed.
+There is no unresolved question requiring my attendance.
+The relevant status is already available in the shared tracker.
+My input can be supplied before the meeting.
+The discussion can proceed using my written recommendation.
+I am not required for the decision on this agenda.
+An asynchronous response allows a more considered review.
+The session duplicates information already shared.
+I can contribute without adding another live commitment.

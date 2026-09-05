@@ -1,0 +1,24 @@
+products
+description: Synthetic products fixtures.
+
+Alder Notebook | A fictional everyday product with a simple design and practical features.
+Brook Travel Cup | Sample product copy for testing catalog cards and item detail pages.
+Cedar Storage Box | A synthetic catalog item intended for development and visual previews.
+Dune Desk Mat | An example product designed around ordinary use and straightforward storage.
+Elm Cable Pouch | Placeholder merchandise copy with useful details for a shop prototype.
+Field Pen Case | A fictional everyday product with a simple design and practical features.
+Grove Laptop Stand | Sample product copy for testing catalog cards and item detail pages.
+Hill Document Folder | A synthetic catalog item intended for development and visual previews.
+Isle Market Bag | An example product designed around ordinary use and straightforward storage.
+Juniper Bottle | Placeholder merchandise copy with useful details for a shop prototype.
+Kite Reading Light | A fictional everyday product with a simple design and practical features.
+Lake Desk Organizer | Sample product copy for testing catalog cards and item detail pages.
+Moss Packing Bag | A synthetic catalog item intended for development and visual previews.
+North Book Cover | An example product designed around ordinary use and straightforward storage.
+Oak Phone Holder | Placeholder merchandise copy with useful details for a shop prototype.
+Pine Pencil Tray | A fictional everyday product with a simple design and practical features.
+Quarry Key Pouch | Sample product copy for testing catalog cards and item detail pages.
+Reed Tablet Sleeve | A synthetic catalog item intended for development and visual previews.
+Stone Lunch Container | An example product designed around ordinary use and straightforward storage.
+Trail Accessory Roll | Placeholder merchandise copy with useful details for a shop prototype.
+

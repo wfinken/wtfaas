@@ -1,0 +1,24 @@
+legal
+description: Synthetic legal fixtures.
+
+Sample service terms | Fictional document content for layout testing only; this is not legal advice or an operative agreement.
+Example privacy notice | A synthetic policy preview intended to test headings, spacing, and document navigation.
+Document review checklist | Example administrative copy with no legal effect, prepared for interface demonstrations.
+Agreement summary | Placeholder text for a document workflow; replace it with reviewed material before real use.
+Policy version record | Demonstration content for checking document structure and presentation, not legal guidance.
+Consent form preview | Fictional document content for layout testing only; this is not legal advice or an operative agreement.
+Retention policy draft | A synthetic policy preview intended to test headings, spacing, and document navigation.
+Access request overview | Example administrative copy with no legal effect, prepared for interface demonstrations.
+Notice delivery record | Placeholder text for a document workflow; replace it with reviewed material before real use.
+Example disclosure page | Demonstration content for checking document structure and presentation, not legal guidance.
+Contract field guide | Fictional document content for layout testing only; this is not legal advice or an operative agreement.
+Review status note | A synthetic policy preview intended to test headings, spacing, and document navigation.
+Policy change summary | Example administrative copy with no legal effect, prepared for interface demonstrations.
+Template clause index | Placeholder text for a document workflow; replace it with reviewed material before real use.
+Agreement renewal preview | Demonstration content for checking document structure and presentation, not legal guidance.
+Document approval queue | Fictional document content for layout testing only; this is not legal advice or an operative agreement.
+Record access summary | A synthetic policy preview intended to test headings, spacing, and document navigation.
+Sample acknowledgment form | Example administrative copy with no legal effect, prepared for interface demonstrations.
+Policy navigation example | Placeholder text for a document workflow; replace it with reviewed material before real use.
+Version comparison note | Demonstration content for checking document structure and presentation, not legal guidance.
+

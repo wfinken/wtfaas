@@ -9,4 +9,15 @@ Updating the service and checking each step.
 Deploying. Rollback remains within reach.
 The release is moving through its checkpoints.
 New code is meeting real traffic.
-
+The release is being applied to the target environment.
+New instances are starting and passing readiness checks.
+The rollout is progressing through its planned stages.
+The deployment is waiting for health verification.
+Traffic is beginning to meet the new version.
+The release process is active.
+The new build is being promoted into service.
+Deployment checks are running alongside the rollout.
+The application is changing versions.
+The release is underway with monitoring attached.
+The rollout is not yet complete.
+The target environment is receiving the update.

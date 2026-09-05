@@ -8,4 +8,16 @@ The implementation does not satisfy the acceptance criteria.
 The costs exceed the resources available for this work.
 The design leaves a required use case unsupported.
 The proposal needs a clearer recovery plan.
-
+The proposal does not resolve the underlying problem.
+The requested approach conflicts with an existing requirement.
+The current design cannot support the expected workload.
+The evidence is not strong enough to justify this change.
+The proposal leaves too many required decisions unspecified.
+The implementation fails a necessary compatibility check.
+The requested change exceeds the approved scope.
+The proposed result would not satisfy the stated objective.
+The review found an unresolved correctness issue.
+The approach requires permissions we cannot grant.
+The plan does not explain how failure will be handled.
+The current version needs stronger validation.
+The proposal cannot proceed with the identified gaps.
