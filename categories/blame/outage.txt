@@ -1,0 +1,10 @@
+Outage
+description: Blame responses for outage.
+
+DNS remains a person of interest. | DNS | Verify resolution from multiple networks and inspect recent DNS changes.
+The certificate has reached the end of its patience. | an expired certificate | Check certificate expiration and renewal status.
+The available capacity and the traffic have stopped agreeing. | capacity exhaustion | Compare traffic volume with resource utilization.
+The load balancer has nobody healthy to talk to. | unhealthy backends | Inspect target health and readiness probe results.
+The incident timeline begins suspiciously close to a release. | the last deploy | Compare incident onset with recent releases.
+The service is waiting on a service that is also waiting. | dependency failure | Inspect upstream health and timeout rates.
+Retries have formed an enthusiastic feedback loop. | a retry storm | Inspect retry volume and backoff behavior.

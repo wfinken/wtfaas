@@ -1,0 +1,11 @@
+Reschedule
+description: Reason responses for reschedule.
+
+The required participants are not available at the planned time.
+We need enough time for a useful discussion.
+The prerequisite work will finish after the original slot.
+A later time will allow us to bring the necessary information.
+The original timing no longer fits the project sequence.
+We need to find a slot with the decision-makers available.
+Moving this will avoid a conflict with committed work.
+

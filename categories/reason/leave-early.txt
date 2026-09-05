@@ -1,0 +1,11 @@
+Leave Early
+description: Reason responses for leave early.
+
+I need to leave early to handle a prior commitment.
+I have reached the end of my available time today.
+I need to wrap up now to meet another obligation.
+I cannot stay for the full session.
+I need to leave before the remaining discussion.
+My availability ends here; I will read the notes.
+I need to hand off the rest of this session.
+

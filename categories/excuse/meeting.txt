@@ -1,0 +1,11 @@
+Meeting
+description: Excuse responses for meeting.
+
+I am tied up in a meeting that has exceeded its original estimate.
+The agenda acquired several unplanned appendices.
+We reached the final question and found three more.
+The discussion needed a decision before anyone could leave.
+The meeting is still working toward its actual purpose.
+A short sync became a detailed review.
+We are attempting to end the meeting by discussing when to end it.
+

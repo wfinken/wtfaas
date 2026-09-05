@@ -1,0 +1,11 @@
+School
+description: Excuse responses for school.
+
+I misjudged the time required for the assignment.
+I spent too long on the first part of the assignment.
+I misunderstood the scope and needed to restart.
+I should have asked for clarification earlier.
+My study plan assumed concentration on demand.
+I did not leave enough time to check the final submission.
+I focused on the wrong section before reviewing the rubric.
+

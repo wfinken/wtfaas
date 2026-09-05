@@ -1,0 +1,10 @@
+Frontend
+description: Blame responses for frontend.
+
+There is an excellent chance somebody cached yesterday. | cache | Verify asset versions and clear affected caches.
+The browser and the API disagree about introductions. | CORS configuration | Check preflight responses and allowed origins.
+An old tab is trying to load new chunks by their old names. | asset version skew | Inspect failed asset requests and cache headers.
+The interface rendered before its data finished arriving. | asynchronous state | Inspect loading states and request completion order.
+The stylesheet brought a rule with too much authority. | CSS specificity | Inspect computed styles and overriding selectors.
+The event listener has been invited more than once. | duplicate listeners | Check listener registration and cleanup.
+The client bundle packed a server-only assumption. | environment mismatch | Inspect browser console errors and build-time variables.

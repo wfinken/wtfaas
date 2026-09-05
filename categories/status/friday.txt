@@ -1,0 +1,11 @@
+Friday
+description: Status responses for friday.
+
+Friday mode: changes are being evaluated with unusual skepticism.
+Keeping the change small enough to explain on Monday.
+Friday status: the rollback plan has been reread.
+Shipping only what the weekend can tolerate.
+Closing loops before opening new ones.
+Today favors documentation over architectural surprises.
+The release calendar is asking sensible questions.
+

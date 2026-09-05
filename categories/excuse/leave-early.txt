@@ -1,0 +1,11 @@
+Leave Early
+description: Excuse responses for leave early.
+
+I have a prior commitment that needs my attention.
+I scheduled the next commitment too close to this one.
+I need to leave at the time I originally planned.
+I have used the time I had available for this.
+I need to make the next handoff on schedule.
+My day has less flexibility than I expected.
+I cannot extend this session without delaying something else.
+

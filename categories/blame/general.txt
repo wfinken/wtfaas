@@ -1,0 +1,10 @@
+General
+description: Blame responses for general.
+
+One small value is absent, and it has consequences. | a missing environment variable | Compare required configuration with the running environment.
+Yesterday's configuration is still doing today's work. | stale configuration | Compare active configuration with the intended version.
+A default value has quietly become a design decision. | an implicit default | Inspect unset options and their documented defaults.
+The timezone was obvious until another machine got involved. | timezone assumptions | Compare stored timestamps and timezone conversion rules.
+The documentation and the running version have different birthdays. | outdated documentation | Check documentation against the installed version.
+The dependency upgraded while the assumptions stayed put. | version incompatibility | Compare dependency versions and compatibility requirements.
+The happy path had no plan for this particular detour. | an unhandled edge case | Reproduce the failing input and inspect boundary handling.

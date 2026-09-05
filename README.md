@@ -27,7 +27,7 @@ npm run dev
 npm run check
 ```
 
-`npm run corpus` validates `corpus/catalog.json` and compiles it to `src/generated/corpus.ts`; never edit the generated file directly. Add concise, non-duplicated, safe entries to the source corpus.
+`npm run corpus` validates `categories/*/*.txt` and compiles them to `src/generated/corpus.ts`; never edit the generated file directly. Each utility has a directory and each category has a text file following SignaaS's header and one-response-per-line format. See the [corpus contribution guide](categories/README.md) for examples and structured blame fields.
 
 ## Deployment
 

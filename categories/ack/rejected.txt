@@ -1,0 +1,11 @@
+Rejected
+description: Ack responses for rejected.
+
+Rejected. The risk-to-regret ratio was unfavorable.
+This needs revision before approval.
+Not approved in its current form.
+Please address the open concerns first.
+This does not meet the agreed criteria.
+Declined for the reasons already recorded.
+Return this to the drafting table.
+

@@ -1,0 +1,11 @@
+Outage
+description: Excuse responses for outage.
+
+An upstream dependency is not responding consistently.
+A service dependency stopped cooperating with our assumptions.
+A configuration change had a wider effect than expected.
+The recovery procedure is taking longer than the diagram suggested.
+The system reached a limit that normal traffic had not tested.
+We are validating the fix before restoring full traffic.
+The incident has more than one contributing factor.
+

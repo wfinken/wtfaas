@@ -1,0 +1,11 @@
+Missed Call
+description: Excuse responses for missed call.
+
+I was away from my phone and missed the call.
+My phone was silenced during focused work.
+I saw the call after it had already ended.
+I was in another conversation and could not pick up.
+I missed the notification while switching tasks.
+I could not answer at that moment.
+I had notifications paused and forgot to check them.
+

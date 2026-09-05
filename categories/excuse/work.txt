@@ -1,0 +1,11 @@
+Work
+description: Excuse responses for work.
+
+A higher-priority incident required immediate attention.
+The small task turned out to have a basement.
+I spent the morning resolving an unexpected dependency.
+The priority order changed before the work was complete.
+I needed to clean up earlier work before proceeding.
+A routine check uncovered additional work.
+I underestimated how much uninterrupted time this needed.
+

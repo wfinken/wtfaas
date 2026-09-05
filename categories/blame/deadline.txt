@@ -1,0 +1,10 @@
+Deadline
+description: Blame responses for deadline.
+
+The work became more specific while nobody was looking. | scope | Reconfirm requirements and remove nonessential work.
+The estimate counted implementation but forgot the review. | incomplete planning | Include review and validation in the remaining estimate.
+The critical path includes a handoff nobody owns. | an unowned dependency | Identify the owner and expected delivery of each dependency.
+The requirements are still arriving after work has started. | requirement churn | Freeze the agreed scope and track new requests separately.
+The schedule assumes everyone is available at once. | capacity assumptions | Check actual availability against planned work.
+The work is almost done in several incompatible places. | integration delay | Plan time for integration and end-to-end validation.
+The calendar omitted the time required to fix failed tests. | missing contingency | Re-estimate using unresolved defects and validation work.

@@ -1,0 +1,11 @@
+Degraded
+description: Status responses for degraded.
+
+Degraded service. Some parts are taking the scenic route.
+Some requests are slower than expected.
+Partial disruption. Core functions remain available.
+Elevated errors are affecting a subset of requests.
+Service is available with reduced capacity.
+Performance is below normal; investigation continues.
+Some features are temporarily unreliable.
+

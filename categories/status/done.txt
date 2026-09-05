@@ -1,0 +1,11 @@
+Done
+description: Status responses for done.
+
+Complete. The thing now does the thing.
+Work complete and ready for handoff.
+Finished. The remaining task is to stop touching it.
+Delivered with the checks recorded.
+The requested outcome is now available.
+Completed and awaiting final review.
+All planned work is finished.
+

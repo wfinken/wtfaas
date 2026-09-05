@@ -1,0 +1,11 @@
+Blocked
+description: Status responses for blocked.
+
+Blocked pending an answer, access, or a small miracle.
+Progress requires a decision on the open question.
+Waiting for access before implementation can continue.
+The next step depends on an unresolved prerequisite.
+Blocked by a dependency outside this task.
+A missing requirement is holding up delivery.
+Work is paused at a documented blocker.
+

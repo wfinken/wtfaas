@@ -1,0 +1,10 @@
+Backend
+description: Blame responses for backend.
+
+The dependency graph has developed opinions. | an upstream dependency | Inspect dependency health and timeout rates.
+The pool is full and the requests are still arriving. | connection pool saturation | Inspect pool occupancy and connection wait times.
+The handler found an exception without a recovery plan. | an unhandled exception | Trace errors to the failing handler and input shape.
+Two requests updated the same thing with different memories. | concurrent writes | Check transaction boundaries and update conflicts.
+A synchronous task is holding the line hostage. | blocking work | Profile request execution and long-running synchronous operations.
+The schema changed before all callers got the memo. | contract drift | Compare request and response schemas across versions.
+The timeout budget was spent before the final dependency. | timeout allocation | Trace per-dependency latency and overall request deadlines.

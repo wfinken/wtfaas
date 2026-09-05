@@ -1,0 +1,11 @@
+Reply
+description: Excuse responses for reply.
+
+I needed time to verify the details before replying.
+I was trying to give you an answer instead of a guess.
+I needed to check one detail, which became several.
+I delayed replying because I had not resolved the question.
+I had the reply in my head, which was not useful to you.
+I should have sent an interim update sooner.
+I was waiting on information that did not arrive when expected.
+

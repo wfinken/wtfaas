@@ -1,0 +1,11 @@
+Maintenance
+description: Status responses for maintenance.
+
+Maintenance in progress. Expected disruption is intentional.
+Applying scheduled updates to the service.
+Routine maintenance is underway.
+Updating components and verifying recovery.
+Maintenance window active. Some interruptions are expected.
+Performing planned work on the infrastructure.
+Service checks will follow the maintenance steps.
+

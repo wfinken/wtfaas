@@ -1,0 +1,10 @@
+Meeting
+description: Blame responses for meeting.
+
+The calendar has interpreted time creatively. | time zones | Confirm attendee zones and calendar settings.
+The agenda describes a topic rather than a decision. | an unclear agenda | Write the decision required before scheduling the session.
+The person who can decide is missing from the invitation. | missing decision authority | Confirm the decision owner can participate.
+The conversation is trying to review a document nobody received. | missing preparation | Share the material before the next discussion.
+The recurring invite has outlived its original purpose. | calendar inertia | Check whether the recurring meeting still has an outcome.
+The discussion has exceeded its assigned container. | scope creep | Park unrelated topics and return to the agenda.
+The call has three note takers and no next action. | unclear ownership | Assign owners and deadlines to agreed actions.

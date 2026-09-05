@@ -1,0 +1,12 @@
+Thanks
+description: Ack responses for thanks.
+
+Thanks. This is genuinely useful.
+Much appreciated.
+Thank you for catching that.
+That saved a useful amount of time.
+Thanks for the clear explanation.
+Appreciated. One fewer mystery.
+Thank you for following through.
+Thanks for making the next step easier.
+

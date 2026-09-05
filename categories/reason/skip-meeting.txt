@@ -1,0 +1,11 @@
+Skip Meeting
+description: Reason responses for skip meeting.
+
+An asynchronous update will be more useful than another meeting.
+There is no decision requiring a live discussion.
+The written update covers my contribution.
+I need to protect time for the work being discussed.
+I can provide feedback in the shared document.
+My attendance would not change the next step.
+The agenda can be resolved asynchronously.
+

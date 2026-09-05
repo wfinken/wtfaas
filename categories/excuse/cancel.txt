@@ -1,0 +1,11 @@
+Cancel
+description: Excuse responses for cancel.
+
+A scheduling conflict makes it impractical to attend.
+I overcommitted and need to correct the schedule.
+I cannot give this the attention it deserves today.
+I agreed before checking my existing commitments.
+My available time is smaller than my calendar implied.
+I need to reduce the number of things I promised this week.
+I should not have treated an empty calendar slot as spare capacity.
+

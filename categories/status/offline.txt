@@ -1,0 +1,11 @@
+Offline
+description: Status responses for offline.
+
+Offline for maintenance. We will return with fewer mysteries.
+Currently offline. Messages can wait in the queue.
+Unavailable until the next scheduled session.
+Disconnected for now; no live updates are expected.
+Offline. The keyboard is taking a scheduled rest.
+The service is not accepting live connections.
+Away from the system at present.
+

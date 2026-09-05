@@ -1,0 +1,10 @@
+Database
+description: Blame responses for database.
+
+The database would like a word about that query. | the database | Inspect slow queries, locks, and connection saturation.
+The index does not cover the question being asked. | a missing index | Inspect query plans and scanned row counts.
+A transaction has been holding the door for a very long time. | a long transaction | Inspect transaction age and blocked sessions.
+The replica has not caught up with the conversation. | replication lag | Compare replication position and read routing.
+The query is retrieving a neighborhood to find one house. | an unbounded query | Check filters, pagination, and returned row counts.
+The disk has run out of places to put the next good idea. | storage exhaustion | Check available storage and growth trends.
+The connection limit has become a queueing policy. | too many connections | Inspect active sessions and pool limits.

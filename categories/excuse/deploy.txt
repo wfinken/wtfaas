@@ -1,0 +1,12 @@
+Deploy
+description: Excuse responses for deploy.
+
+The deployment exposed an environment-specific issue that did not reproduce locally.
+A configuration difference appeared after release.
+The health check found a disagreement with the release plan.
+The build passed; the runtime asked follow-up questions.
+The rollback plan became the deployment plan.
+A dependency behaved differently in the target environment.
+The release needs one more configuration check.
+Production has provided feedback that staging withheld.
+

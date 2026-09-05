@@ -1,0 +1,11 @@
+Code Review
+description: Excuse responses for code review.
+
+I am validating the change against the surrounding system before approving it.
+The diff is short; the consequences are less compact.
+I am following the changed behavior through its callers.
+I want to verify the failure path before signing off.
+The tests answer most of my questions, but not all of them.
+I am checking whether the change affects existing clients.
+I need enough time to review more than the formatting.
+
