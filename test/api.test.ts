@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import worker from '../src/index';
+import { website } from '../src/website';
 
 const env = {} as any;
 const ctx = { waitUntil: () => {}, passThroughOnException: () => {}, props: {} } as unknown as ExecutionContext;
@@ -25,5 +26,10 @@ describe('WTFaaS API', () => {
   it('is deterministic with a seed', async () => { const [a,b]=await Promise.all([get('/excuse/deploy?seed=repeat'),get('/excuse/deploy?seed=repeat')]); expect(await a.text()).toBe(await b.text()); });
   it('validates unknown and malformed values', async () => { expect((await get('/blame/printer')).status).toBe(404); expect((await get('/eta/software?estimate=tomorrow')).status).toBe(400); expect((await get('/decide?choices=one')).status).toBe(400); });
   it('escapes supplied input in HTML', async () => { const r=await get('/decide?choices=%3Cscript%3Ealert(1)%3C%2Fscript%3E,okay&format=html'); expect(await r.text()).not.toContain('<script>alert'); });
+  it('documents only wtf lookups that actually resolve', async () => {
+    const links = [...website().matchAll(/class="chip" href="([^"]+)"/g)].map(m => m[1]);
+    expect(links.length).toBeGreaterThan(20);
+    for (const link of links) expect([link, (await get(link)).status]).toEqual([link, 200]);
+  });
   it('has discovery endpoints and method policy', async () => { expect((await get('/modules')).status).toBe(200); expect((await get('/openapi.json')).status).toBe(200); expect((await get('/health')).status).toBe(200); const r=await worker.fetch(new Request('https://wtfaas.dev/health',{method:'POST'}),env,ctx); expect(r.status).toBe(405); });
 });
