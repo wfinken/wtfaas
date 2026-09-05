@@ -15,5 +15,5 @@ export const exampleRoutes: Record<string, string> = {
   blame: '/blame/outage',
   eta: '/eta/software?estimate=2d',
   reason: '/reason/delay',
-  placeholder: '/placeholder/ecommerce/product?count=3'
+  placeholder: '/placeholder/ecommerce/product'
 };
