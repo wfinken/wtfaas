@@ -1,0 +1,11 @@
+Waiting
+description: Status responses for waiting.
+
+Waiting on a dependency with its own feelings.
+Waiting for the next required input.
+Ready to continue when the dependency completes.
+The next step is awaiting confirmation.
+Queued behind work that must finish first.
+Waiting. Refreshing harder has not helped.
+No action is available until the handoff arrives.
+

@@ -1,0 +1,12 @@
+Deploying
+description: Status responses for deploying.
+
+Deploying. Please avoid startling production.
+Deployment in progress. The buttons are being pressed carefully.
+Rolling out the new version in stages.
+Release in progress. Watching the health checks.
+Updating the service and checking each step.
+Deploying. Rollback remains within reach.
+The release is moving through its checkpoints.
+New code is meeting real traffic.
+

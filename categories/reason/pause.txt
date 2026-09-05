@@ -1,0 +1,11 @@
+Pause
+description: Reason responses for pause.
+
+We are pausing to resolve the open risks first.
+We need to establish the facts before continuing.
+The current approach needs review before more work accumulates.
+We are waiting for a decision that changes the scope.
+Continuing now would create avoidable rework.
+The next step requires a confirmed owner.
+We need a clear success criterion before proceeding.
+

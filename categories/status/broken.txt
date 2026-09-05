@@ -1,0 +1,11 @@
+Broken
+description: Status responses for broken.
+
+Broken, but now with a ticket and a theory.
+Service is down. Recovery work is underway.
+The system is currently unable to serve requests.
+An active incident is blocking normal operation.
+Availability is interrupted while we work on recovery.
+The service needs repair before normal use can resume.
+Current state: unavailable, with attention attached.
+

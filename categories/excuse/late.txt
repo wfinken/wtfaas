@@ -1,0 +1,11 @@
+Late
+description: Excuse responses for late.
+
+I underestimated the travel time and should have communicated sooner.
+I left too little margin between commitments.
+My estimate did not include the transition time.
+I planned for everything to go smoothly. That was optimistic.
+I lost track of the time and should have checked earlier.
+The previous task ran longer than I allowed for.
+I started later than I should have.
+

@@ -1,0 +1,11 @@
+Seen
+description: Ack responses for seen.
+
+Seen. Processing has commenced.
+Read, but not yet acted on.
+Visible in the queue now.
+I have seen the update.
+This has my attention.
+Read. A considered response will follow.
+The message is no longer unread.
+

@@ -1,0 +1,12 @@
+Working
+description: Status responses for working.
+
+Working on it. The computer has been informed.
+In progress. Momentum is plausible.
+Work continues. The difficult part has a name now.
+Making progress one resolved question at a time.
+Still working. The checklist is shrinking.
+Implementation is underway.
+In progress, with fewer unknowns than yesterday.
+The current task is moving forward.
+

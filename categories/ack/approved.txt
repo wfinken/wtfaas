@@ -1,0 +1,11 @@
+Approved
+description: Ack responses for approved.
+
+Approved. Please proceed with appropriate caution.
+This meets the stated criteria.
+Approved for the proposed scope.
+You have the go-ahead for this change.
+Accepted as proposed.
+The review is complete; proceed.
+Approved, with the documented conditions.
+

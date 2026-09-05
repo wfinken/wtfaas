@@ -1,0 +1,10 @@
+Network
+description: Blame responses for network.
+
+Packets are taking a path with character development. | the network | Check latency, packet loss, and recent routing changes.
+The firewall is enforcing a rule nobody remembers adding. | a firewall rule | Check recent firewall changes and denied connection logs.
+The route exists on paper more reliably than on the router. | routing configuration | Verify routes and next-hop reachability.
+The packets are too large for part of the journey. | MTU mismatch | Check path MTU and fragmentation behavior.
+A resolver has retained a memory we would prefer it forgot. | stale DNS cache | Compare resolver answers and TTLs.
+The connection pool is collecting connections without releasing them. | connection exhaustion | Inspect active sockets and connection lifecycle.
+The proxy has developed a shorter attention span. | proxy timeout | Compare proxy timeout settings with request latency.

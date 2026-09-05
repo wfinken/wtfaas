@@ -1,0 +1,11 @@
+Camera Off
+description: Excuse responses for camera off.
+
+My connection is unstable, so I am preserving audio quality.
+I am keeping video off to reduce distractions.
+I am joining in audio-only mode today.
+The camera setup needs attention I cannot give it during the call.
+I can participate more reliably with video disabled.
+I am preserving bandwidth for the shared screen.
+My video is unavailable, but I can still follow the discussion.
+

@@ -1,0 +1,11 @@
+Cancel
+description: Reason responses for cancel.
+
+We need to cancel because the necessary conditions are not in place.
+The planned work no longer serves the current goal.
+We cannot proceed within the available resources.
+The prerequisites will not be ready in time.
+The expected benefit no longer justifies the effort.
+We need to stop this before further commitments accumulate.
+The scope has changed enough to require a new plan.
+

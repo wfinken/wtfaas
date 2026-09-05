@@ -1,0 +1,10 @@
+Ci
+description: Blame responses for ci.
+
+The credentials have quietly expired again. | stale credentials | Rotate and validate the CI credential.
+The runner is still remembering the previous build. | a stale build cache | Retry with a clean cache and compare dependency versions.
+The test depends on a clock with different priorities. | time-sensitive tests | Check clock assumptions and timezone settings.
+The lockfile and installation command have parted ways. | dependency drift | Verify lockfile use and package manager versions.
+The secret is available to the branch next door. | secret scoping | Check secret availability for this workflow and event.
+The runner has less memory than the laptop. | runner resource limits | Inspect peak memory and runner capacity.
+The test order has become an undocumented dependency. | shared test state | Run the failing test alone and inspect cleanup.

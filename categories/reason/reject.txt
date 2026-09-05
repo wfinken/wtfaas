@@ -1,0 +1,11 @@
+Reject
+description: Reason responses for reject.
+
+The proposal does not meet the current requirements.
+The change introduces a risk we have not addressed.
+The evidence does not support the proposed conclusion.
+The implementation does not satisfy the acceptance criteria.
+The costs exceed the resources available for this work.
+The design leaves a required use case unsupported.
+The proposal needs a clearer recovery plan.
+

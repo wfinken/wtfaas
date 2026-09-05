@@ -1,0 +1,11 @@
+Begrudging
+description: Ack responses for begrudging.
+
+Acknowledged, with administrative enthusiasm.
+Fine. I have located the required enthusiasm.
+Understood. My objections have been filed internally.
+Acknowledged through a modest sigh.
+Yes, including that part.
+Accepted with a small administrative groan.
+I will cooperate with the documented reality.
+

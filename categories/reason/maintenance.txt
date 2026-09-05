@@ -1,0 +1,11 @@
+Maintenance
+description: Reason responses for maintenance.
+
+Scheduled maintenance is required to keep the service reliable.
+A component update requires a planned interruption.
+We need to validate the system after infrastructure changes.
+The service needs routine work that cannot run during normal traffic.
+We are replacing a component before it becomes a failure.
+The maintenance window allows controlled testing and recovery.
+We need to apply configuration changes and verify their effect.
+

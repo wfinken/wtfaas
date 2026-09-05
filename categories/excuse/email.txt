@@ -1,0 +1,11 @@
+Email
+description: Excuse responses for email.
+
+Your message was routed into an unusually busy part of my inbox.
+I read it at a bad time and failed to return to it.
+I drafted a reply and neglected the sending part.
+I let the inbox become a second task manager.
+The message needed a longer answer than I had time for.
+I missed the follow-up among the other threads.
+I should have acknowledged this while checking the details.
+

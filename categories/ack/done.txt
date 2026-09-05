@@ -1,0 +1,12 @@
+Done
+description: Ack responses for done.
+
+Done. Nothing exploded visibly.
+Done. The checkbox has been checked.
+Finished and ready for your review.
+Completed. The loose ends are tied.
+The requested work is wrapped up.
+That is now in the completed pile.
+All requested steps are accounted for.
+Finished. Please inspect the result.
+

@@ -1,0 +1,11 @@
+Rollback
+description: Reason responses for rollback.
+
+We are rolling back to restore a known-good state.
+The new version is causing unexpected failures.
+The release does not meet the current health criteria.
+Restoring the previous version reduces the immediate impact.
+We need to recover service before investigating further.
+The change introduced a regression that requires more testing.
+We are returning to the last verified configuration.
+

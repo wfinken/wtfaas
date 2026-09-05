@@ -1,0 +1,11 @@
+Delay
+description: Reason responses for delay.
+
+Additional validation is needed before we can proceed safely.
+The dependency is not ready for the next step.
+We need to verify the result before release.
+An unresolved requirement is affecting the schedule.
+The review needs more time than originally allocated.
+We are addressing a failure found during testing.
+Delivery is delayed while we confirm the acceptance criteria.
+

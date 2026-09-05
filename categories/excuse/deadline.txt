@@ -1,0 +1,11 @@
+Deadline
+description: Excuse responses for deadline.
+
+The remaining work needs more validation than planned.
+I estimated the visible work and missed the integration work.
+The last ten percent brought its own ten percent.
+I need another pass to avoid handing over a fragile result.
+The original estimate assumed fewer unknowns.
+The happy path was quick; the edge cases were not.
+I was too optimistic about the review turnaround.
+

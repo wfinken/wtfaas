@@ -1,0 +1,10 @@
+Performance
+description: Blame responses for performance.
+
+Timing has become a feature requirement. | a race condition | Trace concurrent requests and shared state.
+The application asks the database the same question repeatedly. | N+1 queries | Trace query counts per request.
+The cache is mostly a decorative object today. | low cache hit rate | Measure cache hits, key cardinality, and expiry settings.
+The payload brought more data than the screen can use. | oversized payloads | Inspect response sizes and remove unused fields.
+The hot path has picked up an unnecessary round trip. | serial network calls | Trace dependency ordering and opportunities for concurrency.
+The CPU is occupied by work nobody measured. | expensive computation | Profile CPU usage under representative load.
+The queue is growing faster than it is being emptied. | worker saturation | Compare arrival rate, throughput, and queue age.

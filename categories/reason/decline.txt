@@ -1,0 +1,11 @@
+Decline
+description: Reason responses for decline.
+
+We cannot take this on without compromising current commitments.
+I do not have the capacity to do this well.
+This falls outside the work I can currently support.
+I cannot commit to the requested timeline.
+Taking this on would delay existing obligations.
+I am not the right person for this particular task.
+I need to keep my current workload manageable.
+

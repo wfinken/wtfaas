@@ -1,0 +1,11 @@
+Rate Limit
+description: Reason responses for rate limit.
+
+Requests are being limited to keep the service available for everyone.
+The request rate exceeds the current allowance.
+Please space requests out to avoid exhausting shared capacity.
+A burst of traffic has used the available request budget.
+The service needs clients to back off before retrying.
+This limit keeps one workload from consuming all capacity.
+Please wait for the current window to reset.
+

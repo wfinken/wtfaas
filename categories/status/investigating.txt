@@ -1,0 +1,11 @@
+Investigating
+description: Status responses for investigating.
+
+Investigating. We have several theories and one suspicious log line.
+Tracing the failure back to its first useful clue.
+Checking recent changes against the incident timeline.
+Narrowing the scope before choosing a fix.
+Collecting evidence. Guessing is still optional.
+Reviewing logs and testing the leading hypothesis.
+The symptoms are clear; the cause is being checked.
+

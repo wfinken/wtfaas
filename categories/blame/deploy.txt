@@ -1,0 +1,10 @@
+Deploy
+description: Blame responses for deploy.
+
+Production and local appear to have been living separate lives. | configuration drift | Compare runtime environment variables and deployed configuration.
+A feature flag took a different position in production. | a feature flag | Compare flag values between environments.
+The container is carrying an older idea of the application. | a stale image | Verify the deployed image digest against the release artifact.
+The migration and the application arrived in the wrong order. | migration ordering | Check schema compatibility and migration completion.
+The new version has not introduced itself to the health probe. | probe configuration | Verify readiness paths and startup grace periods.
+The environment variable exists, just not in this environment. | missing configuration | Inspect required runtime bindings and variables.
+The artifact took a detour through the wrong environment. | release targeting | Verify the deployment target and artifact version.
