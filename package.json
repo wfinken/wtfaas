@@ -1,0 +1,26 @@
+{
+  "name": "wtfaas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "corpus": "node scripts/build-corpus.mjs",
+    "prepare": "npm run corpus",
+    "predev": "npm run corpus",
+    "dev": "wrangler dev",
+    "predeploy": "npm run corpus",
+    "deploy": "wrangler deploy",
+    "pretest": "npm run corpus",
+    "test": "vitest run",
+    "pretypecheck": "npm run corpus",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run test"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260903.1",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4",
+    "wrangler": "^4.39.0"
+  }
+}
