@@ -1,0 +1,24 @@
+contractor
+description: ETA wording for contractor.
+
+{estimate}, subject to access, materials, and the agreed scope.
+{estimate}, if the site is ready when the work begins.
+{estimate}, assuming the required parts arrive on schedule.
+{estimate}, with a margin for the conditions found on arrival.
+{estimate}, provided the scope does not acquire another room.
+{estimate}, pending confirmation of the remaining dependencies.
+{estimate}, if the inspection does not identify follow-up work.
+{estimate}, assuming the work area remains available.
+{estimate}, subject to the next delivery.
+{estimate}, with the current understanding of the job.
+{estimate}, if the existing installation matches the description.
+{estimate}, provided the necessary approvals are in place.
+{estimate}, allowing for setup and cleanup.
+{estimate}, assuming no hidden prerequisite appears.
+{estimate}, with the completion check still to come.
+{estimate}, if scheduling remains aligned.
+{estimate}, subject to the condition of the existing work.
+{estimate}, provided the agreed materials are usable.
+{estimate}, with a small allowance for practical reality.
+{estimate}, assuming the final walkthrough stays short.
+

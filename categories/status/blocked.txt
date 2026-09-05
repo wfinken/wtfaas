@@ -8,4 +8,16 @@ The next step depends on an unresolved prerequisite.
 Blocked by a dependency outside this task.
 A missing requirement is holding up delivery.
 Work is paused at a documented blocker.
-
+The task cannot advance until the prerequisite is resolved.
+Access is missing for the next operation.
+A decision is required before work can resume.
+The blocker is identified and awaiting resolution.
+Progress has stopped at an external dependency.
+The next action needs approval that is not yet available.
+The task is ready but cannot proceed under current conditions.
+We need a missing input to continue.
+Work is waiting at a prerequisite check.
+An unresolved constraint prevents further progress.
+The path forward depends on one open question.
+The required handoff has not arrived.
+The task is stationary for a documented reason.

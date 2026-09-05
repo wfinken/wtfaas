@@ -8,4 +8,16 @@ I want to verify the failure path before signing off.
 The tests answer most of my questions, but not all of them.
 I am checking whether the change affects existing clients.
 I need enough time to review more than the formatting.
-
+The changed lines depend on behavior outside the diff.
+I am checking whether the tests cover the reported failure.
+I need to understand the old behavior before endorsing the new one.
+The implementation is clear, but the compatibility impact needs review.
+I am reviewing how the change behaves when the dependency fails.
+I found an assumption that needs to be confirmed.
+I need to run through the less common inputs.
+The review requires context that is not in the pull request.
+I am checking that the fix does not create a second problem.
+The change touches a path with more callers than expected.
+I want to understand the data migration implications.
+The review is waiting on a reproducible test case.
+I am reading the surrounding code before making a confident recommendation.

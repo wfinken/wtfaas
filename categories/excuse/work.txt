@@ -8,4 +8,16 @@ The priority order changed before the work was complete.
 I needed to clean up earlier work before proceeding.
 A routine check uncovered additional work.
 I underestimated how much uninterrupted time this needed.
-
+The routine task had non-routine prerequisites.
+I found an issue in the work that the next step depended on.
+The implementation needed a decision that was not in the brief.
+I lost useful time switching between competing priorities.
+The environment needed attention before the task could start.
+I spent too much of the available time on setup.
+The straightforward approach did not fit the actual data.
+I had to verify a dependency before continuing.
+The work was simple only at the level of the task title.
+I needed to revisit an assumption from the earlier phase.
+The toolchain requested maintenance at an inconvenient point.
+I used the available focus time to fix a more urgent blocker.
+The task expanded when I checked what completion would require.

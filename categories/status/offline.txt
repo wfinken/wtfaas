@@ -8,4 +8,16 @@ Disconnected for now; no live updates are expected.
 Offline. The keyboard is taking a scheduled rest.
 The service is not accepting live connections.
 Away from the system at present.
-
+The system is not currently connected.
+Live responses are unavailable while offline.
+The session has ended for now.
+The connection is closed until the next active period.
+The service is currently disconnected.
+No live processing is taking place here.
+The system is away from the network.
+Offline status is active.
+The endpoint is not participating in live traffic.
+The session is inactive at present.
+The system will need to reconnect before continuing.
+This component is currently out of contact.
+The live connection is not available.

@@ -1,0 +1,24 @@
+social
+description: Synthetic social fixtures.
+
+A small project update | A fictional social post for testing a feed, written without real personal details.
+Notes from today's work | Sample community copy inviting a thoughtful response to a small update.
+A question for the workshop | Demonstration feed content with room for a link and a short conversation.
+A useful thing we found | A synthetic update for previewing social cards and notification layouts.
+An afternoon experiment | Placeholder post content for a prototype, unrelated to any real person.
+A short progress note | A fictional social post for testing a feed, written without real personal details.
+A new sketch to share | Sample community copy inviting a thoughtful response to a small update.
+A lesson from the prototype | Demonstration feed content with room for a link and a short conversation.
+Something worth documenting | A synthetic update for previewing social cards and notification layouts.
+A quick community update | Placeholder post content for a prototype, unrelated to any real person.
+The next thing to try | A fictional social post for testing a feed, written without real personal details.
+A recent improvement | Sample community copy inviting a thoughtful response to a small update.
+A note from the studio | Demonstration feed content with room for a link and a short conversation.
+An idea for the next session | A synthetic update for previewing social cards and notification layouts.
+A simple tool recommendation | Placeholder post content for a prototype, unrelated to any real person.
+A moment from the process | A fictional social post for testing a feed, written without real personal details.
+A draft ready for feedback | Sample community copy inviting a thoughtful response to a small update.
+A small milestone | Demonstration feed content with room for a link and a short conversation.
+A reminder for the group | A synthetic update for previewing social cards and notification layouts.
+A thought for next week | Placeholder post content for a prototype, unrelated to any real person.
+

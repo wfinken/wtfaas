@@ -1,0 +1,24 @@
+HTTP 502
+description: Human explanations for HTTP 502.
+
+The server asked another server for help. That server answered incorrectly.
+The gateway received an upstream response it could not use.
+The intermediary could not make sense of its upstream reply.
+The front server reached behind itself and found a bad answer.
+The gateway's helper supplied an invalid response.
+The request crossed a gateway and met an upstream problem.
+The server in the middle cannot use what came back.
+The gateway expected a valid reply and received something else.
+The upstream conversation failed the gateway's response check.
+The proxy has a problem with the answer from behind it.
+The gateway cannot pass along a usable upstream response.
+The service asked its dependency a question and got an unusable reply.
+The intermediary has no valid upstream answer to deliver.
+The gateway's side of the conversation found an invalid response.
+The proxy needs a better reply from its upstream service.
+The outer server is reporting trouble with the inner server's answer.
+The response chain broke at an upstream reply.
+The gateway received a response that did not meet expectations.
+The server acting as messenger cannot deliver the upstream answer.
+The middle layer is objecting to what came back from the next layer.
+

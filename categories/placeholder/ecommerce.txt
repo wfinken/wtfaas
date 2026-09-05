@@ -1,0 +1,24 @@
+ecommerce
+description: Synthetic ecommerce fixtures.
+
+Northline Daypack | A thoughtfully sized everyday item with durable materials and a straightforward design.
+Juniper Desk Lamp | Made for regular use, easy storage, and the small tasks that fill a day.
+Harbor Travel Mug | A practical addition to a workspace or travel kit, with an understated finish.
+Signal Field Notebook | Simple materials and useful details make this an easy everyday companion.
+Cinder Cable Organizer | Designed to keep daily essentials organized without adding unnecessary bulk.
+Willow Laptop Sleeve | A thoughtfully sized everyday item with durable materials and a straightforward design.
+Canvas Market Tote | Made for regular use, easy storage, and the small tasks that fill a day.
+Ridge Water Bottle | A practical addition to a workspace or travel kit, with an understated finish.
+Elm Desk Tray | Simple materials and useful details make this an easy everyday companion.
+Meadow Pencil Case | Designed to keep daily essentials organized without adding unnecessary bulk.
+Slate Phone Stand | A thoughtfully sized everyday item with durable materials and a straightforward design.
+Orchard Lunch Bag | Made for regular use, easy storage, and the small tasks that fill a day.
+Coast Storage Pouch | A practical addition to a workspace or travel kit, with an understated finish.
+Maple Book Light | Simple materials and useful details make this an easy everyday companion.
+Fern Key Holder | Designed to keep daily essentials organized without adding unnecessary bulk.
+Trail Packing Cube | A thoughtfully sized everyday item with durable materials and a straightforward design.
+Paper Document Wallet | Made for regular use, easy storage, and the small tasks that fill a day.
+Birch Tablet Cover | A practical addition to a workspace or travel kit, with an understated finish.
+Cove Pen Roll | Simple materials and useful details make this an easy everyday companion.
+Drift Coaster Set | Designed to keep daily essentials organized without adding unnecessary bulk.
+

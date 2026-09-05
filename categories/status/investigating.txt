@@ -8,4 +8,16 @@ Narrowing the scope before choosing a fix.
 Collecting evidence. Guessing is still optional.
 Reviewing logs and testing the leading hypothesis.
 The symptoms are clear; the cause is being checked.
-
+Testing the suspected cause against the observed behavior.
+The incident scope is being established.
+Tracing the affected request path.
+Comparing healthy and failing cases.
+Checking which change preceded the symptoms.
+The leading explanation is being tested.
+Looking for the earliest failure in the chain.
+Collecting enough evidence to choose a safe fix.
+The investigation has narrowed to a smaller set of causes.
+Separating the trigger from the surrounding noise.
+Reviewing the system state at the time of failure.
+The cause is not confirmed yet.
+Following the evidence through the dependency chain.

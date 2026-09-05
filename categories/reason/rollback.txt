@@ -8,4 +8,16 @@ Restoring the previous version reduces the immediate impact.
 We need to recover service before investigating further.
 The change introduced a regression that requires more testing.
 We are returning to the last verified configuration.
-
+The current release is not behaving as validated.
+The previous configuration offers a safer operating state.
+The release has introduced unacceptable error rates.
+We need to reverse the change while we investigate the regression.
+The new behavior is disrupting a required workflow.
+The deployment did not meet its recovery checks.
+The current version needs additional work before production use.
+We are restoring the earlier behavior to reduce disruption.
+The release is being reversed because a dependency is incompatible.
+The new configuration has failed its operational checks.
+We need to remove the recent change from the incident path.
+The update has caused a loss of expected functionality.
+The previous release is the best available recovery option.

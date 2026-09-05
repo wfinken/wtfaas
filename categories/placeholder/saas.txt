@@ -1,0 +1,24 @@
+saas
+description: Synthetic saas fixtures.
+
+Keep the next step in view | Keep tasks, owners, and notes together so the next person has enough context to act.
+Give decisions a place to live | Organize active work into a clear list with decisions and open questions attached.
+Find the work behind the update | Share project updates that explain what changed and what still needs attention.
+Make the handoff easier to follow | Collect the details behind each handoff and make them easy to find.
+Put project context within reach | Plan the next step with a practical view of tasks, dependencies, and available time.
+Keep a useful record of progress | Keep tasks, owners, and notes together so the next person has enough context to act.
+Bring scattered notes together | Organize active work into a clear list with decisions and open questions attached.
+Track the work that matters today | Share project updates that explain what changed and what still needs attention.
+Give every task a clear owner | Collect the details behind each handoff and make them easy to find.
+See what is ready for review | Plan the next step with a practical view of tasks, dependencies, and available time.
+Keep delivery details in one place | Keep tasks, owners, and notes together so the next person has enough context to act.
+Make room for focused work | Organize active work into a clear list with decisions and open questions attached.
+Turn the update into an action | Share project updates that explain what changed and what still needs attention.
+Know what changed and why | Collect the details behind each handoff and make them easy to find.
+Share the context before the meeting | Plan the next step with a practical view of tasks, dependencies, and available time.
+Keep a readable project history | Keep tasks, owners, and notes together so the next person has enough context to act.
+Make the next release easier to plan | Organize active work into a clear list with decisions and open questions attached.
+Find the answer in the project record | Share project updates that explain what changed and what still needs attention.
+Keep the checklist close to the work | Collect the details behind each handoff and make them easy to find.
+Follow progress without another call | Plan the next step with a practical view of tasks, dependencies, and available time.
+

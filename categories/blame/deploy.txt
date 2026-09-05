@@ -8,3 +8,16 @@ The migration and the application arrived in the wrong order. | migration orderi
 The new version has not introduced itself to the health probe. | probe configuration | Verify readiness paths and startup grace periods.
 The environment variable exists, just not in this environment. | missing configuration | Inspect required runtime bindings and variables.
 The artifact took a detour through the wrong environment. | release targeting | Verify the deployment target and artifact version.
+The package arrived without all its luggage. | missing build assets | Compare bundled files with runtime asset requests.
+The service account cannot do what the release expects. | deployment permissions | Check deployment identity permissions for required resources.
+The secret rotated while the release was still reading the old value. | secret version mismatch | Compare active secret versions with the deployed configuration.
+The startup script assumes a directory that never shipped. | working directory | Check startup paths and packaged directory structure.
+The deployment is healthy according to a very narrow question. | incomplete health checks | Verify probes cover the dependencies required for useful traffic.
+The release selected a tag that has changed its meaning. | mutable image tags | Compare the running digest with the intended immutable artifact.
+The app started before its prerequisites were ready. | startup ordering | Check dependency readiness and initialization sequencing.
+The runtime cannot find the file the build machine could. | case-sensitive paths | Compare import and file-name casing in the deployment artifact.
+The release is waiting for resources that are already allocated elsewhere. | resource quotas | Inspect allocation failures and configured quotas.
+The rollback left the schema in the future. | schema compatibility | Check whether the previous application supports the migrated schema.
+The process launched with a different entry point than expected. | startup command | Inspect the configured executable and startup arguments.
+The release configuration contains an assumption from another region. | regional configuration | Compare regional endpoints and resource identifiers.
+The deploy succeeded at sending bytes, not at receiving traffic. | traffic routing | Verify routes direct traffic to the new healthy version.

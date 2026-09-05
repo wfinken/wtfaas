@@ -1,0 +1,24 @@
+ENOTFOUND
+description: Human explanations for ENOTFOUND.
+
+The internet phonebook did not have that number.
+The hostname could not be resolved.
+The name lookup did not produce a usable destination.
+The resolver could not find the requested hostname.
+The client needs an address that this lookup did not provide.
+The hostname failed the address-finding stage.
+The name could not be translated into the needed network address.
+The request has a name but no resolved destination.
+The lookup failed before the connection could get started.
+Check the hostname and the resolver configuration.
+The naming system did not supply the address for this host.
+The domain lookup did not finish with a destination.
+The requested host name did not resolve for this operation.
+The client could not locate the host through name resolution.
+The address lookup has left the client without directions.
+The hostname needs checking before the application can connect.
+The resolver did not return what the connection needed.
+The machine cannot connect using a name it cannot resolve.
+The lookup ended without a usable host address.
+The name-to-address step failed for the requested host.
+

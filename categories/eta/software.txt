@@ -1,0 +1,24 @@
+software
+description: ETA wording for software.
+
+{estimate}, if the requirements stay where we left them.
+{estimate}, with a little room for the integration to have opinions.
+{estimate}, assuming the tests agree with the implementation.
+{estimate}, before anyone says it also needs an export button.
+{estimate}, provided the dependency behaves like its documentation.
+{estimate}, with the usual uncertainty around the last edge case.
+{estimate}, if the happy path has accurately described its neighbors.
+{estimate}, pending a conversation with the build system.
+{estimate}, assuming done means the same thing to everyone.
+{estimate}, with review time included in the optimism.
+{estimate}, unless the small change has a large family.
+{estimate}, if the migration stays as boring as planned.
+{estimate}, subject to what the first real input reveals.
+{estimate}, allowing for the difference between working and finished.
+{estimate}, if the rollback plan remains a document.
+{estimate}, assuming the test environment is feeling representative.
+{estimate}, with a cautious eye on the dependency graph.
+{estimate}, if the final check is actually final.
+{estimate}, unless the compiler has a question.
+{estimate}, as an estimate rather than a promise from the universe.
+

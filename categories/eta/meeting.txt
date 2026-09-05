@@ -1,0 +1,24 @@
+meeting
+description: ETA wording for meeting.
+
+{estimate}, if the agenda has an ending.
+{estimate}, assuming the final question stays singular.
+{estimate}, before the discussion discovers a related discussion.
+{estimate}, with a firm boundary around the parking lot.
+{estimate}, provided someone owns the decision.
+{estimate}, if updates leave time for the actual question.
+{estimate}, assuming the screen share starts promptly.
+{estimate}, with room for one useful clarification.
+{estimate}, if everyone has read the document.
+{estimate}, unless the meeting starts planning its sequel.
+{estimate}, provided the scope fits the calendar slot.
+{estimate}, with a facilitator watching the clock.
+{estimate}, if the conversation stays on the current agenda.
+{estimate}, assuming the decision-makers are present.
+{estimate}, with time to record the next action.
+{estimate}, if the quick question remains quick.
+{estimate}, unless the last item contains the whole problem.
+{estimate}, provided the introduction does not become the session.
+{estimate}, assuming we can agree on what needs deciding.
+{estimate}, if ending the meeting does not require another vote.
+

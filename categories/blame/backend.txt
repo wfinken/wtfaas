@@ -8,3 +8,16 @@ Two requests updated the same thing with different memories. | concurrent writes
 A synchronous task is holding the line hostage. | blocking work | Profile request execution and long-running synchronous operations.
 The schema changed before all callers got the memo. | contract drift | Compare request and response schemas across versions.
 The timeout budget was spent before the final dependency. | timeout allocation | Trace per-dependency latency and overall request deadlines.
+The request body does not match the parser's expectations. | content type mismatch | Compare request content type with body parsing configuration.
+The job was launched without anyone waiting for it. | untracked asynchronous work | Check background tasks are awaited or registered for completion.
+The handler has mistaken shared state for request state. | global mutable state | Inspect variables shared between concurrent requests.
+The serialized result lost a field the caller requires. | serialization mismatch | Compare the response payload with the documented schema.
+The cache key forgot a parameter that changes the answer. | incomplete cache key | Check all response-affecting inputs are represented in cache keys.
+The service is retrying an operation that already succeeded. | missing idempotency | Inspect retries and duplicate operation identifiers.
+The request exceeds the parser's configured appetite. | payload size limit | Compare request size with application and proxy limits.
+The handler reads the request stream a second time. | consumed request body | Check body reads and stream ownership.
+The token is valid somewhere else. | token audience mismatch | Verify issuer and audience checks against the intended service.
+The permission check knows the user but not the requested scope. | authorization scope | Compare token permissions with the operation requirements.
+The route pattern matches more than its author intended. | overlapping routes | Inspect route ordering and path matching.
+The service is returning before the transaction completes. | premature response | Trace response timing relative to commit completion.
+The deployment changed a timeout unit by three orders of magnitude. | duration units | Check seconds versus milliseconds in configuration.

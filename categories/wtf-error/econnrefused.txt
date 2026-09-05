@@ -1,0 +1,24 @@
+ECONNREFUSED
+description: Human explanations for ECONNREFUSED.
+
+You reached the building, but nobody was accepting visitors.
+The target refused the connection attempt.
+No connection was accepted at that address and port.
+The socket tried to connect and received a refusal.
+The destination is not accepting this connection.
+The port did not offer a listening service for this attempt.
+The connection request was actively declined.
+The client could not establish a connection with that target.
+The address and port need checking before another attempt.
+The target said no at the connection stage.
+The network request found a refusal before an application response.
+The socket could not get a connection accepted.
+Check whether the intended service is actually listening.
+The connection attempt did not find an accepting listener.
+The destination did not open a conversation for this socket.
+The client asked to connect and did not get admission.
+The refusal happened before useful application traffic.
+The requested connection was rejected at the target.
+The port is not accepting the connection your client wants.
+The connection never got far enough to exchange the expected data.
+

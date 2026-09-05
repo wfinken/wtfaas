@@ -1,0 +1,24 @@
+restaurant
+description: Synthetic restaurant fixtures.
+
+Morning Table | A fictional neighborhood kitchen serving a small seasonal menu in a relaxed setting.
+Corner Kitchen | A made-up cafe with simple dishes, a short menu, and room for a leisurely meal.
+Garden Lunch | Sample restaurant copy for previewing menus, booking cards, and location details.
+Harbor Supper | A fictional dining spot built around familiar ingredients and thoughtful preparation.
+Little Oven | Demonstration restaurant content with space for opening hours and reservation details.
+Market Plate | A fictional neighborhood kitchen serving a small seasonal menu in a relaxed setting.
+Willow Pantry | A made-up cafe with simple dishes, a short menu, and room for a leisurely meal.
+Sunday Bowl | Sample restaurant copy for previewing menus, booking cards, and location details.
+Copper Spoon | A fictional dining spot built around familiar ingredients and thoughtful preparation.
+Common Table | Demonstration restaurant content with space for opening hours and reservation details.
+Orchard Cafe | A fictional neighborhood kitchen serving a small seasonal menu in a relaxed setting.
+Brick Courtyard | A made-up cafe with simple dishes, a short menu, and room for a leisurely meal.
+The Bread Shelf | Sample restaurant copy for previewing menus, booking cards, and location details.
+Northside Lunchroom | A fictional dining spot built around familiar ingredients and thoughtful preparation.
+Meadow Bistro | Demonstration restaurant content with space for opening hours and reservation details.
+Open Window Cafe | A fictional neighborhood kitchen serving a small seasonal menu in a relaxed setting.
+Evening Plate | A made-up cafe with simple dishes, a short menu, and room for a leisurely meal.
+Maple Counter | Sample restaurant copy for previewing menus, booking cards, and location details.
+Small Batch Kitchen | A fictional dining spot built around familiar ingredients and thoughtful preparation.
+West End Table | Demonstration restaurant content with space for opening hours and reservation details.
+

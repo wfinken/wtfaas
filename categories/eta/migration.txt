@@ -1,0 +1,24 @@
+migration
+description: ETA wording for migration.
+
+{estimate}, if the data resembles the rehearsal.
+{estimate}, assuming the locks are available.
+{estimate}, with verification after the final batch.
+{estimate}, provided the old and new schemas agree on the handoff.
+{estimate}, if the backlog does not grow faster than the migration.
+{estimate}, allowing for the records the sample missed.
+{estimate}, assuming the retry path remains lightly used.
+{estimate}, with a cautious allowance for index work.
+{estimate}, if storage throughput stays steady.
+{estimate}, provided the validation checks pass.
+{estimate}, assuming no legacy value needs a special conversation.
+{estimate}, with time to reconcile the counts.
+{estimate}, if the final batch behaves like the first.
+{estimate}, subject to database load.
+{estimate}, provided the recovery checkpoint remains valid.
+{estimate}, assuming the schema change does not block ordinary work.
+{estimate}, while historical data explains its habits.
+{estimate}, if all required transformations are known.
+{estimate}, with the rollback option still in view.
+{estimate}, assuming completion includes checking the result.
+

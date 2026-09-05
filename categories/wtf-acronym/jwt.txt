@@ -1,0 +1,24 @@
+JWT
+description: Human explanations for JWT.
+
+A small package of claims that needs careful verification.
+A token can state claims without making those claims trustworthy.
+The token's contents need verification before they earn authority.
+JWT carries claims in a compact format that fits between services.
+Decoding the payload is reading the paperwork, not validating it.
+The application must verify the token before trusting its claims.
+The token can describe an identity or permission, but validation still matters.
+JWT is a container for claims, not a shortcut around verification.
+A readable payload is not proof that its sender is trusted.
+The claims arrive in a token-shaped envelope.
+The application needs to check the token's authenticity and intended use.
+The token is compact; the verification checklist should not be.
+JWT can transport claims without requiring them to be secret.
+A signed token still needs expiry and audience checks.
+The application should ask who issued these claims and who may use them.
+The token's signature is useful only when it is actually verified.
+JWT packages assertions so software can pass them around.
+The payload tells a story; verification decides whether to accept it.
+Treat the token as untrusted input until its checks succeed.
+The token may carry the answer, but it must first pass inspection.
+

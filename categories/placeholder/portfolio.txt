@@ -1,0 +1,24 @@
+portfolio
+description: Synthetic portfolio fixtures.
+
+Interface studies | A fictional collection of project work, process notes, and selected outcomes.
+Editorial experiments | Sample portfolio content presenting a short project overview and its design context.
+Product sketches | A demonstration project entry with room for methods, constraints, and results.
+Identity explorations | Placeholder creative work for checking project cards and case-study layouts.
+Workshop notes | An example portfolio section linking observations to a practical design result.
+Selected illustrations | A fictional collection of project work, process notes, and selected outcomes.
+Small web projects | Sample portfolio content presenting a short project overview and its design context.
+Layout studies | A demonstration project entry with room for methods, constraints, and results.
+Research snapshots | Placeholder creative work for checking project cards and case-study layouts.
+Prototype archive | An example portfolio section linking observations to a practical design result.
+Print experiments | A fictional collection of project work, process notes, and selected outcomes.
+Interaction notes | Sample portfolio content presenting a short project overview and its design context.
+Visual systems | A demonstration project entry with room for methods, constraints, and results.
+Project case notes | Placeholder creative work for checking project cards and case-study layouts.
+Personal studies | An example portfolio section linking observations to a practical design result.
+Design journal | A fictional collection of project work, process notes, and selected outcomes.
+Field observations | Sample portfolio content presenting a short project overview and its design context.
+Motion sketches | A demonstration project entry with room for methods, constraints, and results.
+Typography samples | Placeholder creative work for checking project cards and case-study layouts.
+Recent work | An example portfolio section linking observations to a practical design result.
+

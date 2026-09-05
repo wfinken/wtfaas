@@ -1,0 +1,24 @@
+HTTP 504
+description: Human explanations for HTTP 504.
+
+The server waited for help until waiting became the problem.
+The gateway did not get an upstream reply in time.
+The proxy's upstream conversation exceeded its deadline.
+The middle server is still waiting on the next server.
+The gateway ran out of time before its helper answered.
+The upstream response missed the gateway's time window.
+The server in front waited too long for the server behind it.
+The request needed an upstream answer that arrived too late or not at all.
+The gateway's deadline expired during the upstream wait.
+The intermediary cannot keep waiting for the response.
+The dependency took longer to reply than the gateway allows.
+The proxy waited for help until its timer objected.
+The gateway is reporting upstream silence past the deadline.
+The next server in the chain did not respond soon enough.
+The response was held up beyond the intermediary's patience.
+The gateway needs the upstream service to answer sooner.
+The server's helper missed the response deadline.
+The upstream wait consumed the gateway's entire budget.
+The middle layer had a timer, and the upstream did not beat it.
+The gateway can tell you it waited, but cannot give you the missing answer.
+

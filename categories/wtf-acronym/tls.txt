@@ -1,0 +1,24 @@
+TLS
+description: Human explanations for TLS.
+
+The part that lets your browser whisper safely to a server.
+TLS protects the conversation between network endpoints.
+Your connection is putting an encrypted wrapper around its traffic.
+TLS keeps the network path from casually reading the conversation.
+The endpoints need a secure channel before exchanging private data.
+TLS negotiates how this connection will protect its messages.
+The connection is checking identity and agreeing on encryption.
+TLS is the security layer around the data in transit.
+The application talks through a channel designed to resist eavesdropping.
+TLS helps keep outsiders from reading or altering the conversation.
+A secure connection needs more than a reassuring URL.
+TLS gives the network conversation confidentiality and integrity protections.
+The connection has cryptographic rules for talking safely.
+TLS helps establish who is at the other end and protect the exchange.
+The network can carry the bytes without being invited to read them.
+TLS wraps a connection in protections for data on the wire.
+The endpoints agree on secrets before sharing the interesting material.
+TLS makes intercepted traffic less useful to the interceptor.
+The transport conversation needs its privacy arrangements in order.
+TLS protects transit, not every possible problem inside the application.
+

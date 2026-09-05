@@ -1,0 +1,24 @@
+OAUTH
+description: Human explanations for OAUTH.
+
+A controlled way to let one service act with limited permission from another.
+OAuth lets an application get delegated access without taking over everything.
+The app wants permission to act, not your password collection.
+OAuth gives another application a defined allowance of access.
+A service can receive permission without becoming the account owner.
+The application needs a grant of access for specific work.
+OAuth is the permission handoff between services.
+The app is asking for delegated authority with boundaries.
+Access can be granted to an application without sharing the user's credentials.
+OAuth lets a service do approved work on someone's behalf.
+The permission is delegated; it is not a transfer of the whole account.
+The application receives access it is allowed to use.
+OAuth is how one service gets a limited working pass for another.
+The service needs authorization, and OAuth structures that exchange.
+OAuth makes the permission scope part of the conversation.
+An application can act within a grant instead of borrowing your identity.
+The access token represents a grant the receiving service must enforce.
+OAuth manages delegated access rather than proving identity by itself.
+The app wants a key to selected rooms, not the building deed.
+OAuth turns permission between services into a defined protocol.
+

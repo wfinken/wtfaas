@@ -8,4 +8,16 @@ Elevated errors are affecting a subset of requests.
 Service is available with reduced capacity.
 Performance is below normal; investigation continues.
 Some features are temporarily unreliable.
-
+The service is operating below its normal reliability.
+Some operations are failing while others remain usable.
+Reduced performance is affecting current traffic.
+The system is partially available during investigation.
+Response times are elevated for affected operations.
+Normal service quality has not yet been restored.
+The service has capacity, but less than expected.
+Some features are taking longer to respond.
+A subset of users may see errors or delays.
+Service continues with known limitations.
+The system is usable but not at full strength.
+Performance remains impaired.
+The service is answering with less consistency than usual.

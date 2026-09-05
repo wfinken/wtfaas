@@ -8,4 +8,16 @@ I planned for everything to go smoothly. That was optimistic.
 I lost track of the time and should have checked earlier.
 The previous task ran longer than I allowed for.
 I started later than I should have.
-
+I allowed no time for the part between leaving and arriving.
+My schedule assumed I could be in two places almost simultaneously.
+I treated the start time as a departure suggestion.
+I tried to finish one more task before leaving.
+I forgot that transitions consume actual minutes.
+The route took longer than the version I had in mind.
+I checked the time after it would have been useful.
+I made a plan with insufficient respect for the clock.
+I should have left a larger buffer.
+I underestimated the number of small delays involved.
+I stayed with the previous task past my planned stopping point.
+I did not account for the time needed to get ready.
+My arrival estimate was based on an unusually cooperative day.

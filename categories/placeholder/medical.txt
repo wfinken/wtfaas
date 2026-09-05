@@ -1,0 +1,24 @@
+medical
+description: Synthetic medical fixtures.
+
+Appointment overview | Synthetic clinic administration copy for a prototype; it contains no patient data or medical advice.
+Clinic hours preview | A fictional appointment-interface example for testing layout and navigation.
+Visit preparation note | Placeholder administrative information, not a real appointment or clinical recommendation.
+Reception contact card | Demonstration text for a clinic interface with no sensitive health records.
+Waiting room notice | Sample office information for visual testing only; replace it before patient-facing use.
+Booking confirmation sample | Synthetic clinic administration copy for a prototype; it contains no patient data or medical advice.
+Provider directory preview | A fictional appointment-interface example for testing layout and navigation.
+Office location summary | Placeholder administrative information, not a real appointment or clinical recommendation.
+Check-in screen example | Demonstration text for a clinic interface with no sensitive health records.
+Appointment reminder sample | Sample office information for visual testing only; replace it before patient-facing use.
+Visitor information card | Synthetic clinic administration copy for a prototype; it contains no patient data or medical advice.
+Service navigation preview | A fictional appointment-interface example for testing layout and navigation.
+Accessibility information | Placeholder administrative information, not a real appointment or clinical recommendation.
+Form completion guide | Demonstration text for a clinic interface with no sensitive health records.
+Contact preference screen | Sample office information for visual testing only; replace it before patient-facing use.
+Schedule change notice | Synthetic clinic administration copy for a prototype; it contains no patient data or medical advice.
+Reception queue example | A fictional appointment-interface example for testing layout and navigation.
+Office update sample | Placeholder administrative information, not a real appointment or clinical recommendation.
+Visit feedback invitation | Demonstration text for a clinic interface with no sensitive health records.
+General information page | Sample office information for visual testing only; replace it before patient-facing use.
+

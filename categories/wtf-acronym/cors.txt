@@ -1,0 +1,24 @@
+CORS
+description: Human explanations for CORS.
+
+The browser is asking whether this website may talk to that website.
+The server needs to tell the browser which origins may read its response.
+Your browser wants permission before sharing data across origins.
+Two websites are involved, and the browser needs the rules.
+The browser is checking the server's cross-origin permission slip.
+The response needs the right sharing headers for this browser request.
+The browser will not treat every origin as a trusted neighbor.
+Cross-origin access requires more than knowing the endpoint address.
+The browser is enforcing a boundary between website origins.
+The server can answer while the browser still refuses to expose that answer.
+The browser needs an explicit sharing arrangement for another origin.
+A browser request crossed origins and found an access check.
+The browser is keeping one site's scripts from casually reading another site.
+The server's sharing policy determines what this origin can read.
+Your frontend and API need a browser-approved introduction.
+The browser is checking whether this response may cross an origin boundary.
+The cross-origin headers tell the browser how much sharing is allowed.
+The browser has questions about where this request came from.
+The browser needs the destination server's approval to expose the response.
+The network request and the browser's permission to read it are separate matters.
+

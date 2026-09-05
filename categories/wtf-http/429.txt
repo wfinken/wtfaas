@@ -1,0 +1,24 @@
+HTTP 429
+description: Human explanations for HTTP 429.
+
+You are asking faster than this service can politely answer.
+The request rate has reached the service's limit.
+The server would like a little space between questions.
+Your client has used its current request allowance.
+The request queue needs fewer arrivals from you.
+Please turn the request volume down.
+The service has applied the brakes to this stream of requests.
+The rate limit is doing exactly what the name suggests.
+The server needs your retry loop to take a breath.
+The allowance is exhausted for the current rate-limit policy.
+Your requests have become a little too frequent.
+The endpoint is asking for backoff, not a faster retry.
+The service is rationing requests at the moment.
+You have reached a request-frequency boundary.
+The server cannot accept this pace from your client.
+Give the request budget time to recover.
+The API has asked your loop to develop patience.
+The service is limiting traffic from this caller.
+The next useful action is usually to wait.
+Request less often and respect any retry instructions.
+

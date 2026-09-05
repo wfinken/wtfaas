@@ -8,3 +8,16 @@ The conversation is trying to review a document nobody received. | missing prepa
 The recurring invite has outlived its original purpose. | calendar inertia | Check whether the recurring meeting still has an outcome.
 The discussion has exceeded its assigned container. | scope creep | Park unrelated topics and return to the agenda.
 The call has three note takers and no next action. | unclear ownership | Assign owners and deadlines to agreed actions.
+The invite has an audience but no owner. | unclear facilitator | Assign a facilitator responsible for the outcome.
+The agenda is asking five people to watch one person type. | synchronous busywork | Identify work that can be completed before the discussion.
+The time slot is shorter than the material it contains. | unrealistic timebox | Compare agenda scope with available time.
+The meeting is reviewing a decision already made elsewhere. | duplicate decision process | Confirm which forum owns the decision.
+The shared screen is showing the wrong version of the document. | version confusion | Confirm the source document before reviewing.
+The discussion has moved from requirements to preferences. | unclear acceptance criteria | Write measurable criteria for the decision.
+The attendee list grew faster than the agenda. | oversized audience | Check which participants are needed for the outcome.
+The call is solving a problem that nobody has reproduced. | missing evidence | Gather a concrete example before choosing a fix.
+The action items have dates but no names. | unassigned actions | Assign an owner to each follow-up.
+The meeting recurs even when there is nothing to discuss. | empty recurring agenda | Cancel sessions without a useful agenda.
+The decision was spoken but never recorded. | missing decision record | Capture the decision and its rationale in shared notes.
+The conversation is reopening a settled question without new information. | decision churn | Review the previous decision and identify what changed.
+The agenda starts with updates and runs out of time before decisions. | agenda ordering | Put decisions before informational updates.

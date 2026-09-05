@@ -1,0 +1,24 @@
+blog
+description: Synthetic blog fixtures.
+
+A quieter way to plan the week | A fictional article exploring the small decisions behind practical project work.
+Notes from a small release | This sample post collects observations, a short example, and a useful next step.
+What the checklist missed | An introductory piece for previewing article layouts and editorial summaries.
+A useful question before starting | A demonstration article about making everyday work easier to understand.
+Keeping the project record readable | Sample editorial copy with room for a concrete example and a considered conclusion.
+The case for a short update | A fictional article exploring the small decisions behind practical project work.
+When the first plan changes | This sample post collects observations, a short example, and a useful next step.
+Finding the next practical step | An introductory piece for previewing article layouts and editorial summaries.
+A better handoff starts with context | A demonstration article about making everyday work easier to understand.
+The value of an ordinary tool | Sample editorial copy with room for a concrete example and a considered conclusion.
+What we learned from the prototype | A fictional article exploring the small decisions behind practical project work.
+Writing down the decision | This sample post collects observations, a short example, and a useful next step.
+A small improvement worth keeping | An introductory piece for previewing article layouts and editorial summaries.
+The work between the milestones | A demonstration article about making everyday work easier to understand.
+How the example became the test | Sample editorial copy with room for a concrete example and a considered conclusion.
+A clear place for open questions | A fictional article exploring the small decisions behind practical project work.
+Making the setup easier to follow | This sample post collects observations, a short example, and a useful next step.
+The afternoon we simplified the form | An introductory piece for previewing article layouts and editorial summaries.
+A note about finishing things | A demonstration article about making everyday work easier to understand.
+Keeping room for another attempt | Sample editorial copy with room for a concrete example and a considered conclusion.
+

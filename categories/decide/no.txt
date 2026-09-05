@@ -1,0 +1,24 @@
+no
+description: Decision wording for no.
+
+No. The available evidence remains unconvinced.
+No. One possible plan has been retired.
+No. The decision queue can move on.
+No. This is a verdict, not a personal review.
+No. The alternative now has your attention.
+No. Another option may be worth considering.
+No. The tiny decision machine has reached its answer.
+No. You can stop negotiating with the URL.
+No. That is the selected answer for this request.
+No. Please adjust the next step accordingly.
+No. The answer has arrived without a slide deck.
+No. An endpoint cannot know your whole situation.
+No. Use your own judgment before acting on this.
+No. The deliberation ends with two letters.
+No. This round goes to restraint.
+No. The question has an answer, if not an explanation.
+No. Consider this a prompt to revisit the plan.
+No. The request has produced a modest objection.
+No. That closes this particular decision loop.
+No. The machine declines with minimal paperwork.
+

@@ -8,3 +8,16 @@ The payload brought more data than the screen can use. | oversized payloads | In
 The hot path has picked up an unnecessary round trip. | serial network calls | Trace dependency ordering and opportunities for concurrency.
 The CPU is occupied by work nobody measured. | expensive computation | Profile CPU usage under representative load.
 The queue is growing faster than it is being emptied. | worker saturation | Compare arrival rate, throughput, and queue age.
+The code parses the same large document for every request. | repeated parsing | Profile parsing time and reusable data initialization.
+The logger is doing more work than the endpoint. | excessive logging | Measure log volume and formatting cost on the hot path.
+The page loads a library for one small feature. | oversized dependency | Inspect bundle composition and unused code.
+The request waits for independent tasks one after another. | unnecessary sequencing | Trace independent operations that could run concurrently.
+The database pool is sized for a workload from another era. | pool sizing | Compare connection wait time with database capacity.
+The cache expires all its entries at once. | synchronized expiry | Inspect expiry patterns and traffic spikes.
+The server compresses tiny responses with large effort. | compression overhead | Measure compression time against payload savings.
+The renderer rebuilds everything for one small change. | excessive rendering | Profile updates and component invalidation.
+The connection is new on every request. | missing connection reuse | Inspect connection creation rates and keep-alive settings.
+The endpoint sends the full history when the client needs the latest item. | overfetching | Compare requested use with returned data.
+The index is useful until the filter changes. | query plan regression | Compare plans and latency across common filter values.
+The worker spends its time waiting for one overloaded dependency. | dependency bottleneck | Trace downstream latency and concurrency limits.
+The queue prioritizes new work while old work keeps waiting. | scheduling policy | Inspect queue ordering and starvation under load.

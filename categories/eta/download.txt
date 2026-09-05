@@ -1,0 +1,24 @@
+download
+description: ETA wording for download.
+
+{estimate}, if the transfer rate holds.
+{estimate}, assuming the connection keeps its current pace.
+{estimate}, with the network's usual right to revise.
+{estimate}, provided the source continues sending.
+{estimate}, if bandwidth remains available.
+{estimate}, based on a transfer that has not finished yet.
+{estimate}, allowing the progress bar some uncertainty.
+{estimate}, if the remaining bytes travel like the earlier ones.
+{estimate}, assuming no retry interrupts the transfer.
+{estimate}, subject to network congestion.
+{estimate}, if the destination can keep writing.
+{estimate}, with the current connection conditions.
+{estimate}, provided the source does not slow down.
+{estimate}, assuming the last chunk is ordinary.
+{estimate}, with room for final verification.
+{estimate}, if the shared connection stays quiet.
+{estimate}, unless the network decides to take turns.
+{estimate}, provided the transfer does not need to resume.
+{estimate}, if the expected size matches the actual payload.
+{estimate}, assuming the progress estimate has enough evidence.
+

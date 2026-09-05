@@ -1,0 +1,24 @@
+ENOENT
+description: Human explanations for ENOENT.
+
+The filesystem cannot find the thing.
+The requested file or directory is missing at that path.
+The path points somewhere the filesystem cannot locate.
+The operation needs an entry that does not exist there.
+A file or directory lookup ended empty-handed.
+The filesystem has no matching entry at the requested location.
+Check the path and the working directory.
+The requested path did not resolve to an existing entry.
+The file operation found an absence.
+The path names a thing that is not available there.
+The directory tree has a missing piece for this operation.
+The operation cannot find the file it was told to use.
+The filesystem needs an actual entry behind that path.
+The file may exist elsewhere, but not at the requested location.
+The supplied path did not lead to the required file or directory.
+The file lookup reached a dead end.
+The operation is missing a filesystem entry it depends on.
+The path and the actual filesystem layout disagree.
+The requested directory entry could not be found.
+The file operation needs its location checked.
+
