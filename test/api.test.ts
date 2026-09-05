@@ -12,6 +12,22 @@ describe('WTFaaS API', () => {
     const alias = await get('/ack/receipt?seed=contribution');
     expect(await canonical.text()).toBe(await alias.text());
   });
+  it('samples a live, random endpoint into the homepage hero', async () => {
+    const bodies = new Set<string>();
+    for (let i = 0; i < 20; i++) {
+      const r = await get('/', { Accept: 'text/html' });
+      const body = await r.text();
+      const path = /curl https:\/\/wtfaas\.dev(\/[^<]*)<br>/.exec(body)?.[1];
+      expect(path).toBeTruthy();
+      // Confirm the hero didn't just template the path — it ran the request for real.
+      const live = await get(path! + (path!.includes('?') ? '&' : '?') + 'format=json');
+      const expected = JSON.stringify(await live.json(), null, 2).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/\n/g, '<br>');
+      expect(body).toContain(expected.slice(0, 40));
+      bodies.add(path!);
+    }
+    // Different endpoint across enough reloads, not one path templated in forever.
+    expect(bodies.size).toBeGreaterThan(1);
+  });
   it('serves the homepage as a document, not escaped source', async () => { const r=await get('/',{Accept:'text/html'}); const body=await r.text(); expect(r.headers.get('content-type')).toContain('text/html'); expect(body).toContain('<main>'); expect(body).not.toContain('&lt;html'); });
   it('explains HTTP errors', async () => { const r=await get('/wtf/http/502'); expect(r.status).toBe(200); expect(((await r.json()) as {name:string}).name).toBe('Bad Gateway'); });
   it('negotiates text and supports HEAD', async () => {
@@ -27,12 +43,12 @@ describe('WTFaaS API', () => {
   it('validates unknown and malformed values', async () => { expect((await get('/blame/printer')).status).toBe(404); expect((await get('/eta/software?estimate=tomorrow')).status).toBe(400); expect((await get('/decide?choices=one')).status).toBe(400); });
   it('escapes supplied input in HTML', async () => { const r=await get('/decide?choices=%3Cscript%3Ealert(1)%3C%2Fscript%3E,okay&format=html'); expect(await r.text()).not.toContain('<script>alert'); });
   it('documents only wtf lookups that actually resolve', async () => {
-    const links = [...website().matchAll(/class="chip" href="([^"]+)"/g)].map(m => m[1]);
+    const links = [...website({ path: '/wtf/http/502', body: '{}' }).matchAll(/class="chip" href="([^"]+)"/g)].map(m => m[1]);
     expect(links.length).toBeGreaterThan(20);
     for (const link of links) expect([link, (await get(link)).status]).toEqual([link, 200]);
   });
   it('wires every explorer tab to a panel and a working example', async () => {
-    const page = website();
+    const page = website({ path: '/wtf/http/502', body: '{}' });
     const tabs = [...page.matchAll(/id="t-([a-z]+)" data-run="([^"]+)"/g)];
     expect(tabs).toHaveLength(9);
     for (const [, id, run] of tabs) {
@@ -42,7 +58,7 @@ describe('WTFaaS API', () => {
     }
   });
   it('ships a homepage script that parses', () => {
-    const page = website();
+    const page = website({ path: '/wtf/http/502', body: '{}' });
     const script = page.slice(page.indexOf('<script>') + 8, page.indexOf('</script>'));
     // A template literal drops unknown escapes, so a regex written into one can arrive broken.
     expect(() => new Function(script)).not.toThrow();
