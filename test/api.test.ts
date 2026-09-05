@@ -31,5 +31,15 @@ describe('WTFaaS API', () => {
     expect(links.length).toBeGreaterThan(20);
     for (const link of links) expect([link, (await get(link)).status]).toEqual([link, 200]);
   });
+  it('wires every explorer tab to a panel and a working example', async () => {
+    const page = website();
+    const tabs = [...page.matchAll(/id="t-([a-z]+)" data-run="([^"]+)"/g)];
+    expect(tabs).toHaveLength(9);
+    for (const [, id, run] of tabs) {
+      expect(page).toContain(`id="p-${id}"`);
+      expect(page).toContain(`#t-${id}:checked~.panes #p-${id}`);
+      expect([run, (await get(run)).status]).toEqual([run, 200]);
+    }
+  });
   it('has discovery endpoints and method policy', async () => { expect((await get('/modules')).status).toBe(200); expect((await get('/openapi.json')).status).toBe(200); expect((await get('/health')).status).toBe(200); const r=await worker.fetch(new Request('https://wtfaas.dev/health',{method:'POST'}),env,ctx); expect(r.status).toBe(405); });
 });
