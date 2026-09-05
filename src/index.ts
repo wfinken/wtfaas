@@ -1,4 +1,5 @@
 import { corpus } from './generated/corpus';
+import { website } from './website';
 
 export interface Env { RATE_LIMIT?: string; PUBLIC_ORIGIN?: string; API_KEYS?: string; RATE_LIMIT_KV?: KVNamespace; DB?: D1Database }
 type Format = 'json' | 'text' | 'html';
@@ -42,7 +43,7 @@ function categories(name:string){return Object.keys(catalog[name] || {});}
 async function rateLimit(request:Request, env:Env):Promise<Response|undefined> { if(!env.RATE_LIMIT_KV || !env.RATE_LIMIT) return; const auth=request.headers.get('authorization')?.replace(/^Bearer\s+/i,'') || request.headers.get('x-api-key'); if(auth && env.API_KEYS?.split(',').map(x=>x.trim()).includes(auth)) return; const ip=request.headers.get('cf-connecting-ip') || 'unknown'; const hour=Math.floor(Date.now()/3600000); const key=`rl:${ip}:${hour}`, limit=Number(env.RATE_LIMIT)||100, current=Number(await env.RATE_LIMIT_KV.get(key)||0); const headers={'RateLimit-Limit':String(limit),'RateLimit-Remaining':String(Math.max(0,limit-current-1)),'RateLimit-Reset':String((hour+1)*3600)}; if(current>=limit) return new Response(JSON.stringify(bad('RATE_LIMITED','Too many requests. Please retry later.',429)),{status:429,headers:{...headers,'Content-Type':'application/json'}}); await env.RATE_LIMIT_KV.put(key,String(current+1),{expirationTtl:3700}); }
 
 function route(request:Request):unknown { const url=new URL(request.url); let parts:string[]; try { parts=url.pathname.split('/').filter(Boolean).map(decodeURIComponent); } catch { throw new Error('INVALID_INPUT'); } const seed=clean(url.searchParams.get('seed'),128); const tone=clean(url.searchParams.get('tone'),32); const context=clean(url.searchParams.get('context'),256); const top=parts[0];
-  if(!top) return home(); if(top==='health') return {ok:true,service:'wtfaas',version:'1.0.0',modules:9,entries:Object.values(catalog).reduce((n,c)=>n+Object.values(c).reduce((m,x)=>m+x.length,0),0),uptime:'edge'};
+  if(!top) return website(); if(top==='health') return {ok:true,service:'wtfaas',version:'1.0.0',modules:9,entries:Object.values(catalog).reduce((n,c)=>n+Object.values(c).reduce((m,x)=>m+x.length,0),0),uptime:'edge'};
   if(top==='modules') return {modules:modules.map(id=>({id,description:descriptions[id],categories:id==='wtf'?['http','error','acronym']:id==='decide'?['yes-no','coin','choices']:id==='placeholder'?placeholderCategories:categories(id)}))};
   if(top==='openapi.json') return openapi();
   if(top==='random'){ const m=pick(['ack','status','blame','reason','excuse'],seed,'random'); const c=pick(categories(m),seed,`random:${m}`); return simple(m,c,seed,tone); }
