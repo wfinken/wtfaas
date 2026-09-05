@@ -85,9 +85,9 @@ const tabCss = docs.map(({ id }) => `#t-${id}:checked~.rail label[for=t-${id}]{b
 function block(title:string, body:string) { return body ? `<div class="pblock"><h4>${title}</h4>${body}</div>` : ''; }
 
 function explorerSection() { return `<section class="wrap section" id="modules"><span id="try"></span><span id="wtf"></span>
-<div class="eyebrow">Nine modules, one panel</div>
-<h2 class="section-title">Every endpoint, and a way to run it.</h2>
-<p class="section-intro">Pick a module. Every category it knows is listed, and every one of them is a live link — click one and it runs below instead of leaving the page.</p>
+<div class="eyebrow">Try it</div>
+<h2 class="section-title">Send a real request.</h2>
+<p class="section-intro">Pick a module, click any category to load it into the box, then run it. Edit the path by hand if you would rather type, and add a seed when you want the same answer twice.</p>
 <div class="explorer">${docs.map(({ id }, index) => `<input class="tabin" type="radio" name="mod" id="t-${id}" data-run="${docs[index].run}"${index === 0 ? ' checked' : ''}>`).join('')}
 <div class="rail" role="tablist">${docs.map(({ id, hint }) => `<label for="t-${id}"><span>${id}</span><small>${hint}</small></label>`).join('')}</div>
 <div class="panes">${docs.map(doc => `<div class="panel" id="p-${doc.id}">
@@ -105,8 +105,10 @@ ${doc.groups.map(([heading, html]) => `<div class="pblock wide"><h4>${heading}</
 <button type="submit">Run</button>
 </form>
 <div class="runout">
-<div class="response-meta"><span id="status">Ready. Click a category above, or edit the path and run it.</span><button class="copy" id="copy-curl" type="button">copy curl</button></div>
-<pre id="result" aria-live="polite">Every module accepts <span class="dim">?seed=</span> for a reproducible answer and <span class="dim">?format=json|text|html</span> for the shape. Unknown categories return 404 with every valid value in <span class="dim">error.suggestions</span>.</pre>
+<div class="response-meta"><span id="status">Ready when you are.</span><button class="copy" id="copy-curl" type="button">copy curl</button></div>
+<pre id="result" aria-live="polite">Your response lands here.
+
+Try a seed to get the same answer twice, switch the format to see it as plain text, or point the path at something that does not exist — the 404 lists everything that does.</pre>
 </div>
 </div>
 </section>`; }
@@ -116,9 +118,9 @@ const copy=async(text,button)=>{try{await navigator.clipboard.writeText(text);co
 document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>copy(b.dataset.copy,b)));
 q('#copy-curl').addEventListener('click',e=>copy("curl 'https://wtfaas.dev"+current+"'",e.currentTarget));
 const pretty=text=>{try{return JSON.stringify(JSON.parse(text),null,2)}catch{return text}};
-const run=async()=>{const raw=path.value.trim().replace(/\s+/g,'');
+const run=async()=>{const raw=path.value.trim().replace(/\\s+/g,'');
 // Leading slashes are collapsed so the runner can only ever call this origin.
-const [route,query='']=('/'+raw.replace(/^\/+/,'')).split('?');const params=new URLSearchParams(query);params.set('format',format.value);
+const [route,query='']=('/'+raw.replace(/^\\/+/,'')).split('?');const params=new URLSearchParams(query);params.set('format',format.value);
 const trimmed=seed.value.trim();if(trimmed)params.set('seed',trimmed);else params.delete('seed');
 const full=route+'?'+params;current=full;status.textContent='GET '+full+' \u00b7 loading\u2026';result.textContent='';
 try{const res=await fetch(full,{headers:{Accept:format.value==='text'?'text/plain':format.value==='html'?'text/html':'application/json'}});const text=await res.text();

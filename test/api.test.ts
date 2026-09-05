@@ -41,5 +41,12 @@ describe('WTFaaS API', () => {
       expect([run, (await get(run)).status]).toEqual([run, 200]);
     }
   });
+  it('ships a homepage script that parses', () => {
+    const page = website();
+    const script = page.slice(page.indexOf('<script>') + 8, page.indexOf('</script>'));
+    // A template literal drops unknown escapes, so a regex written into one can arrive broken.
+    expect(() => new Function(script)).not.toThrow();
+    expect(script).toContain('preventDefault');
+  });
   it('has discovery endpoints and method policy', async () => { expect((await get('/modules')).status).toBe(200); expect((await get('/openapi.json')).status).toBe(200); expect((await get('/health')).status).toBe(200); const r=await worker.fetch(new Request('https://wtfaas.dev/health',{method:'POST'}),env,ctx); expect(r.status).toBe(405); });
 });
