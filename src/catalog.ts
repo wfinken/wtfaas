@@ -5,3 +5,15 @@ export const etaCategories = ['software', 'deploy', 'contractor', 'meeting', 'do
 export const placeholderCategories = ['startup', 'saas', 'ecommerce', 'github', 'status-page', 'blog', 'news', 'legal', 'medical', 'finance', 'restaurant', 'portfolio', 'dashboard', 'social', 'reviews', 'users', 'products'];
 export const placeholderKinds = ['card', 'text', 'product', 'issue', 'profile', 'review', 'article', 'commit', 'status', 'company'];
 export const placeholderDefaultKinds: Record<string, string> = { saas:'text', ecommerce:'product', github:'issue' };
+// One representative request per module: the tab default in the explorer, and the pool the homepage hero samples from.
+export const exampleRoutes: Record<string, string> = {
+  wtf: '/wtf/http/502',
+  excuse: '/excuse/deploy',
+  decide: '/decide?choices=ship,wait,rollback',
+  status: '/status/investigating',
+  ack: '/ack/received',
+  blame: '/blame/outage',
+  eta: '/eta/software?estimate=2d',
+  reason: '/reason/delay',
+  placeholder: '/placeholder/ecommerce/product?count=3'
+};

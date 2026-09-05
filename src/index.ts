@@ -4,7 +4,7 @@ import { website } from './website';
 
 export interface Env { RATE_LIMIT?: string; PUBLIC_ORIGIN?: string; API_KEYS?: string; RATE_LIMIT_KV?: KVNamespace; DB?: D1Database }
 type Format = 'json' | 'text' | 'html';
-import { modules, descriptions, etaCategories, placeholderCategories, placeholderDefaultKinds } from './catalog';
+import { modules, descriptions, etaCategories, placeholderCategories, placeholderDefaultKinds, exampleRoutes } from './catalog';
 const catalog = corpus as unknown as Record<string, Record<string, unknown[]>>;
 import { HTTP, TERMS, ERRORS } from './wtf-data';
 
@@ -23,14 +23,22 @@ function formatFor(request:Request):Format | null { const v=new URL(request.url)
 function escapeHtml(s:string) { return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!)); }
 function toText(data:unknown):string { if (typeof data==='string') return data; if (data && typeof data==='object') { const d=data as Record<string,unknown>; for(const k of ['message','excuse','wtf','meaning','choice','answer']) if(typeof d[k]==='string') return d[k] as string; return JSON.stringify(data, null, 2); } return String(data); }
 function response(request:Request, data:unknown, status=200, module?:string):Response { const format=formatFor(request); if(!format) return response(request,bad('INVALID_FORMAT','format must be json, text, or html'),406); const seeded=Boolean(new URL(request.url).searchParams.get('seed')); const headers=new Headers({'Access-Control-Allow-Origin':'*','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Cache-Control': seeded?'public, max-age=86400':'no-store'}); let body:string; if(format==='json'){headers.set('Content-Type','application/json; charset=utf-8');body=JSON.stringify(data);} else if(format==='text'){headers.set('Content-Type','text/plain; charset=utf-8');body=toText(data);} else {headers.set('Content-Type','text/html; charset=utf-8');headers.set('Content-Security-Policy',"default-src 'none'; style-src 'unsafe-inline'");body=`<!doctype html><meta charset="utf-8"><pre>${escapeHtml(toText(data))}</pre>`;} if(module) headers.set('X-WTFAAS-Module',module); return new Response(request.method==='HEAD'?null:body,{status,headers}); }
-function homepageResponse(request:Request):Response { return new Response(request.method==='HEAD'?null:website(),{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'self'; img-src 'self' data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'self'"}}); }
+function homepageResponse(request:Request):Response { return new Response(request.method==='HEAD'?null:website(heroExample()),{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'self'; img-src 'self' data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'self'"}}); }
 function generated(module:string, category:string, entry:unknown, seed:string, extras:Record<string,unknown>={}) { const value=typeof entry==='string'?{message:entry}:entry as Record<string,unknown>; return {module,category,...value,...extras,meta:{seed:seed||null,deterministic:Boolean(seed)}}; }
 function categories(name:string){return Object.keys(catalog[name] || {});}
+
+// Genuinely random each request: an unseeded route through the real API, not a canned sample.
+function heroExample():{path:string; body:string} {
+  const routes = Object.values(exampleRoutes);
+  const path = routes[Math.floor(Math.random() * routes.length)];
+  const data = route(new Request('https://wtfaas.dev' + path));
+  return { path, body: escapeHtml(JSON.stringify(data, null, 2)).replace(/\n/g, '<br>') };
+}
 
 async function rateLimit(request:Request, env:Env):Promise<Response|undefined> { if(!env.RATE_LIMIT_KV || !env.RATE_LIMIT) return; const auth=request.headers.get('authorization')?.replace(/^Bearer\s+/i,'') || request.headers.get('x-api-key'); if(auth && env.API_KEYS?.split(',').map(x=>x.trim()).includes(auth)) return; const ip=request.headers.get('cf-connecting-ip') || 'unknown'; const hour=Math.floor(Date.now()/3600000); const key=`rl:${ip}:${hour}`, limit=Number(env.RATE_LIMIT)||100, current=Number(await env.RATE_LIMIT_KV.get(key)||0); const headers={'RateLimit-Limit':String(limit),'RateLimit-Remaining':String(Math.max(0,limit-current-1)),'RateLimit-Reset':String((hour+1)*3600)}; if(current>=limit) return new Response(JSON.stringify(bad('RATE_LIMITED','Too many requests. Please retry later.',429)),{status:429,headers:{...headers,'Content-Type':'application/json'}}); await env.RATE_LIMIT_KV.put(key,String(current+1),{expirationTtl:3700}); }
 
 function route(request:Request):unknown { const url=new URL(request.url); let parts:string[]; try { parts=url.pathname.split('/').filter(Boolean).map(decodeURIComponent); } catch { throw new Error('INVALID_INPUT'); } const seed=clean(url.searchParams.get('seed'),128); const tone=clean(url.searchParams.get('tone'),32); const context=clean(url.searchParams.get('context'),256); const top=parts[0];
-  if(!top) return website(); if(top==='health') return {ok:true,service:'wtfaas',version:'1.0.0',modules:9,entries:Object.values(catalog).reduce((n,c)=>n+Object.values(c).reduce((m,x)=>m+x.length,0),0),uptime:'edge'};
+  if(!top) return website(heroExample()); if(top==='health') return {ok:true,service:'wtfaas',version:'1.0.0',modules:9,entries:Object.values(catalog).reduce((n,c)=>n+Object.values(c).reduce((m,x)=>m+x.length,0),0),uptime:'edge'};
   if(top==='modules') return {modules:modules.map(id=>({id,description:descriptions[id],...(metadata[id] ? { category_details: Object.values(metadata[id]) } : {}),categories:id==='wtf'?['http','error','acronym']:id==='decide'?['yes-no','coin','choices']:id==='placeholder'?placeholderCategories:categories(id)}))};
   if(top==='openapi.json') return openapi();
   if(top==='random'){ const m=pick(['ack','status','blame','reason','excuse'],seed,'random'); const c=pick(categories(m),seed,`random:${m}`); return simple(m,c,seed,tone); }
