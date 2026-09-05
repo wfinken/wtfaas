@@ -6,6 +6,7 @@ const ctx = { waitUntil: () => {}, passThroughOnException: () => {}, props: {} }
 async function get(path:string, headers?:HeadersInit) { return worker.fetch(new Request(`https://wtfaas.dev${path}`, { headers }), env, ctx); }
 
 describe('WTFaaS API', () => {
+  it('serves the homepage as a document, not escaped source', async () => { const r=await get('/',{Accept:'text/html'}); const body=await r.text(); expect(r.headers.get('content-type')).toContain('text/html'); expect(body).toContain('<main>'); expect(body).not.toContain('&lt;html'); });
   it('explains HTTP errors', async () => { const r=await get('/wtf/http/502'); expect(r.status).toBe(200); expect(((await r.json()) as {name:string}).name).toBe('Bad Gateway'); });
   it('negotiates text and supports HEAD', async () => { const r=await get('/ack/received',{Accept:'text/plain'}); expect(await r.text()).toContain('Received'); const head=await worker.fetch(new Request('https://wtfaas.dev/ack/received',{method:'HEAD'}),env,ctx); expect(await head.text()).toBe(''); });
   it('is deterministic with a seed', async () => { const [a,b]=await Promise.all([get('/excuse/deploy?seed=repeat'),get('/excuse/deploy?seed=repeat')]); expect(await a.text()).toBe(await b.text()); });
